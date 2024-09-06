@@ -252,6 +252,8 @@ def gpt_response(prompt, file, history):
         print(f"Error communicating with OpenAI API: {e}")
         return "Error: Unable to retrieve response from OpenAI."
 
+
+
 if __name__ == "__main__":
     history = {
         "prompt": "",
