@@ -1,1 +1,13 @@
-{"installed":{"client_id":"244169152342-romc9jofqa55pqkehpds3q31ra8jmhdn.apps.googleusercontent.com","project_id":"flash-datum-434905-n3","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["http://localhost"]}}
+{
+    "type": "service_account",
+    "project_id": "flash-datum-434905-n3",
+    "private_key_id": "675b6e7b96e1fa1a5e4a364e6467bb050be37a0b",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDqKGDCCnz3bG1p\nh+z8cFvJR6sf+ElxEQpuFT54z2PH5bAZcEcbenAAq7AvU+GAa8e9dLkTNqZ5G+5I\nl08zUXwkhd7JvPXwR0y1WQFCLT4szfXVjRKi0rM+qZ7pQ+T/ItsdKxk4Xu0qLnyv\nEhl7xF16oZdUmRAAzHHFQi9jtx4wuYcLgmbq+I3LhYQ4G5TZ3RPcfKSO7NiFJ7oH\n1zm2n8Oet5QR5ul/sZXO6+5rC2qMJs6EAFeZNDdD+htBQ6watmean7WvhvYQKz4Q\nWwXbiP/vasswxnILtTTAiPT1Uul8qx32iDkmZWo4OtTCGIMleAEMFndk7FbTI03W\nSnhictmjAgMBAAECggEAM+8bsr3PxLLEO5U9rymeefCO2ErhwxWT+iF1FydsSpA7\ndBDufH417DgoHf8dMzX0eaUzTTsgRhk3SttgYhHvFkyowpbJ925g6ZHhkRNmyFov\n7ZrZ6MoRnlLRn4wC9MF+1qPR9qo7MNFZrxy1ETnWv9WqMkW2gm7Vxvnsd9HL/OMk\nkw+QeC5fhajpyjg5KMtVoHiUou+8B5ZznyA2f32P+HpIpz1kIPFvMCM3u+vefPio\nmSMgsgdwKWE+TNFIInEFVk95yP2/QMSaTWiLQ7AQoHZ41BOjeFmG4lpq9+ji0V2P\neLuPxVP+naMahf39VJDENynCmvMjdt08o+50VobzIQKBgQD8spgFSNxWTrZTD8m/\nc3CK7VxqPzgl4NE0LtAStfMIIGbfp5joWweh49MoiTUcqyc/WCYGvhdYdV6MdaK+\nLYXCPSpSEc9Fp3aysCMyeSuAu7UCgWjVdxweZ+fKgOxOPwao2MgCH+JzBGVbQRhM\nfZ7XvLlSfy+oiYynXaJe5nwa4QKBgQDtN8InqKooUq61HQw3HIhfRHPf1EGlzk7O\nGY+5DAiP9Kns04SxNHy5BbpUolyJO/0Fm24TOoPReBlSgh+Pl6nEmB5pCoq2YRTv\nGFiSgZOoPxOx8C25QMqFLBMVcA/fMUWnmJOjhsRFqW873CtdvF+ZGE8aQ8x4tieJ\nJzC/KUCpAwKBgGDYnZSg6PkW75+D1IFQX9iOwbVih0VVFTiXnF0faIY7zNF4rQyY\nHqO36eyGMVnMap1HTkOVROM9EEBqsTWLwtC/mmGbu8FpPf+bq9GjSL3ssqHEMQZm\nwNsSXW5p3KbcVtQNSRIvYB1OmP3RQ9vE5USvaqMoZX6FQOe/5gPS98thAoGBAM9W\nhwsm7uMjsbR32S9qbv/l0un2mhKUSmj2CpsRG4LHtKZdEoPYfpMxoHVNHFiO6E64\nVfPUl1bFBE0Lkw5s32QIGbxyDF/wZt28h942B5ts1ogWh8B+EwVnSp7YPec1J86f\nG5w4tOC2gZTukbDybxRfHPS2AcgYXmIQsRjEs9GFAoGAcNcjK26BoG9XDLhhO2yC\nnvctYrB/AIx5PNgyGYWhdq1WblS1T7q2u8c+ppR+Fx75dLEwHfFg8YZaKcBX2IFj\nxcbbJap3jeE+G8q9bxZ3JDvkf8+G7RUDkrYOIx347q3WaLt09lM/qURy16ffHAej\n2RHqUTiAbluRdN/wHf3X/q0=\n-----END PRIVATE KEY-----\n",
+    "client_email": "agent-service@flash-datum-434905-n3.iam.gserviceaccount.com",
+    "client_id": "107389828340179546182",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/agent-service%40flash-datum-434905-n3.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
