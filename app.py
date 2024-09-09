@@ -15,6 +15,12 @@ VANILLA_MISTRAL_REPO = "https://github.com/SourceBox-LLC/SourceLightning-Vanilla
 VANILLA_GEMINI_REPO = "https://github.com/SourceBox-LLC/SourceLightning-Vanilla-Gemini.git"
 VANILLA_CLAUD_REPO = "https://github.com/SourceBox-LLC/SourceLightning-Vanilla-Claude.git"
 
+# Agent repository URLs
+GOOGLE_AGENT_REPO = "https://github.com/SourceBox-LLC/SourceLightning-GoogleAgent.git"
+CODE_AGENT_REPO = "https://github.com/SourceBox-LLC/SourceLightning-CodeAgent.git"
+LOCAL_COMMAND_AGENT_REPO = "https://github.com/SourceBox-LLC/SourceLightning-LocalCommandAgent.git"
+FINANCE_AGENT_REPO = "https://github.com/SourceBox-LLC/SourceLightning-FinanceAgent.git"
+
 # Function to clone the repo and zip it inside a parent folder
 def clone_and_zip_repo(REPO_URL, repo_name):
     # Get the current working directory
@@ -106,6 +112,31 @@ def vanilla_gemini():
 @app.route('/download/vanilla_claud')
 def vanilla_claud():
     return serve_repo(VANILLA_CLAUD_REPO, "vanilla_claud")
+
+
+
+
+
+
+# google agent route
+@app.route('/download/google_agent')
+def google_agent():
+    return serve_repo(GOOGLE_AGENT_REPO, "google_agent")
+
+# code agent route
+@app.route('/download/code_agent')
+def code_agent():
+    return serve_repo(CODE_AGENT_REPO, "code_agent")
+
+# local command agent route
+@app.route('/download/local_command_agent')
+def local_command_agent():
+    return serve_repo(LOCAL_COMMAND_AGENT_REPO, "local_command_agent")
+
+# finance agent route
+@app.route('/download/finance_agent')
+def finance_agent():
+    return serve_repo(FINANCE_AGENT_REPO, "finance_agent")
 
 
 # After request handler to delete the zip file once it has been sent to the user
