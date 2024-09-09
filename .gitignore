@@ -1,3 +1,5 @@
 venv
 .env
 g_creds.json
+.devcontainer
+.github
