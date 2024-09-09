@@ -16,7 +16,7 @@ VANILLA_GEMINI_REPO = "https://github.com/SourceBox-LLC/SourceLightning-Vanilla-
 VANILLA_CLAUD_REPO = "https://github.com/SourceBox-LLC/SourceLightning-Vanilla-Claude.git"
 
 # Function to clone the repo and zip it inside a parent folder
-def clone_and_zip_repo(REPO_URL):
+def clone_and_zip_repo(REPO_URL, repo_name):
     # Get the current working directory
     cwd = os.getcwd()
     
@@ -29,8 +29,8 @@ def clone_and_zip_repo(REPO_URL):
         subprocess.run(["git", "clone", REPO_URL, temp_dir], check=True)
         print(f"Repository successfully cloned to {temp_dir}")
         
-        # Create a parent folder in the temp directory
-        parent_folder_name = "file_reader_repo"
+        # Create a parent folder in the temp directory named after the repo
+        parent_folder_name = f"{repo_name}_repo"
         parent_folder_path = os.path.join(temp_dir, parent_folder_name)
         os.makedirs(parent_folder_path)
         
@@ -55,9 +55,9 @@ def clone_and_zip_repo(REPO_URL):
         print(f"Temporary directory {temp_dir} has been removed.")
 
 # Serve repo to user
-def serve_repo(REPO_URL):
+def serve_repo(REPO_URL, repo_name):
     # Clone and zip the repo, then get the zip file path
-    zip_file_path = clone_and_zip_repo(REPO_URL)
+    zip_file_path = clone_and_zip_repo(REPO_URL, repo_name)
         
     if zip_file_path and os.path.exists(zip_file_path):
         # Store the zip file path in the request context for deletion later
@@ -68,7 +68,6 @@ def serve_repo(REPO_URL):
     else:
         abort(500, description="Error cloning or zipping the repository")
 
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -76,37 +75,37 @@ def index():
 # File reader download route
 @app.route('/download/file_reader')
 def download_file_reader():
-    return serve_repo(FILE_READER_REPO)
+    return serve_repo(FILE_READER_REPO, "file_reader")
 
 # PC scanner download route
 @app.route('/download/pc_scanner')
 def download_pc_scanner():
-    return serve_repo(PC_SCANNER_REPO)
+    return serve_repo(PC_SCANNER_REPO, "pc_scanner")
 
 # wallpaper generator route
 @app.route('/download/wallpaper_gen')
 def wallpaper_gen():
-    return serve_repo(WALLPAPER_GEN_REPO)
+    return serve_repo(WALLPAPER_GEN_REPO, "wallpaper_gen")
 
 # vanilla gpt route
 @app.route('/download/vanilla_gpt')
 def vanilla_gpt():
-    return serve_repo(VANILLA_GPT_REPO)
+    return serve_repo(VANILLA_GPT_REPO, "vanilla_gpt")
 
 # mistral route
 @app.route('/download/vanilla_mistral')
 def vanilla_mistral():
-    return serve_repo(VANILLA_MISTRAL_REPO)
+    return serve_repo(VANILLA_MISTRAL_REPO, "vanilla_mistral")
 
 # gemini route
 @app.route('/download/vanilla_gemini')
 def vanilla_gemini():
-    return serve_repo(VANILLA_GEMINI_REPO)
+    return serve_repo(VANILLA_GEMINI_REPO, "vanilla_gemini")
 
 #claud route
 @app.route('/download/vanilla_claud')
 def vanilla_claud():
-    return serve_repo(VANILLA_CLAUD_REPO)
+    return serve_repo(VANILLA_CLAUD_REPO, "vanilla_claud")
 
 
 # After request handler to delete the zip file once it has been sent to the user
@@ -120,8 +119,6 @@ def delete_zip_file(response):
         except Exception as e:
             print(f"Error deleting zip file: {e}")
     return response
-
-
 
 if __name__ == "__main__":
     port = int(os.getenv('PORT', 5000))  # Use the PORT environment variable if available, default to 5000
