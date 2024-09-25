@@ -11,6 +11,8 @@
 ### Download chatbots to use locally in your console.
   - Choose between models like OpenAI, Mistral, and Gemini
 
+<br/>
+
 ### Download AI powered application to your local machine
   - Download usefull AI powerd tools like PC scanner and more
   
