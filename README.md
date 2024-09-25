@@ -16,13 +16,16 @@
 ## Agents
 - Download and execute AI agents built for various tasks localy in your console.
 - Complete local tasks with prompts.
-<br/>
-Examples:
+- 
+### Examples:
+
 "Open my command console."
 "Create a text file on my desktop."
 
 - Stay up to date on financial news and stock movements with aditional AI insights
 - Get financial predictions and analysis
-Examples:
+
+### Examples:
+
 "How has apple been performing this week?"
 "based on recent trends where might apples stock be next month?"
