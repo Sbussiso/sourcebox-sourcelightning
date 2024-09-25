@@ -6,10 +6,15 @@
 <br>
 <br>
 
-## Chatbots
-- Download chatbots to use locally in your console.
-- Best for quick queries or when you dont feel like logging in!
-- Choose between models like OpenAI, Mistral, and Gemini
+## Chat Applications
+
+### Download chatbots to use locally in your console.
+  - Choose between models like OpenAI, Mistral, and Gemini
+
+### Download AI powered application to your local machine
+  - Download usefull AI powerd tools like PC scanner and more
+  
+
 
 <br/>
 
@@ -31,3 +36,11 @@
 "How has apple been performing this week?"
 <br/>
 "based on recent trends where might apples stock be next month?"
+
+<br/>
+<br/>
+
+## Getting into it with Chat Applications
+
+## Getting into it with Agents
+
