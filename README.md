@@ -19,7 +19,8 @@
 - 
 ### Examples:
 
-"Open my command console."\n
+"Open my command console."
+<br/>
 "Create a text file on my desktop."
 
 - Stay up to date on financial news and stock movements with aditional AI insights
