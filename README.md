@@ -26,6 +26,28 @@
 
 <br/>
 
+## Agents
+- ### Download and execute AI agents built for various tasks localy in your console.
+- ### Complete local tasks with prompts.
+
+### Examples:
+
+"Open my command console."
+<br/>
+"Create a text file on my desktop."
+
+- ### Stay up to date on financial news and stock movements with aditional AI insights
+- ### Get financial predictions and analysis
+
+### Examples:
+
+"How has apple been performing this week?"
+<br/>
+"based on recent trends where might apples stock be next month?"
+
+<br/>
+<br/>
+
 
 ## PC Scanner
 ### The PC Scanner app scans your system specs and resources to give you a simplified system report
@@ -135,29 +157,6 @@ You do not have to manually set your wallpaper, Wallpaper Generator takes care o
 ## Getting into it with Wallpaper Generator
 instructions for Wallpaper Generator
 
-<br/>
-
-
-## Agents
-- ### Download and execute AI agents built for various tasks localy in your console.
-- ### Complete local tasks with prompts.
-
-### Examples:
-
-"Open my command console."
-<br/>
-"Create a text file on my desktop."
-
-- ### Stay up to date on financial news and stock movements with aditional AI insights
-- ### Get financial predictions and analysis
-
-### Examples:
-
-"How has apple been performing this week?"
-<br/>
-"based on recent trends where might apples stock be next month?"
-
-<br/>
 <br/>
 
 ## Getting into it with Chat Applications
