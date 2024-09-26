@@ -408,6 +408,9 @@ Run an agent connected to your google accounts
 > Choose either ***"Run system scan again"*** to perform a fresh new system scan, ***"Regenerate report on last system scan"*** to regenerate a new summary on your previous scan, or **"Exit"** to close the application.
 
 <br/>
+<br/>
+<br/>
+<br/>
 
 ### File Reader
 
