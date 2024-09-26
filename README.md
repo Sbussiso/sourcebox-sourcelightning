@@ -231,18 +231,30 @@ Perfect for:
 
 ### Some features of agents include
 > ***Task Automation:*** AI Agents can be prompted to complete a wide range of tasks, from simple operations like opening a console window to more complex file system management or script execution.
+
+<br/>
+
 > ***Local Execution:*** All tasks are performed locally on your system, ensuring faster response times and allowing for offline usage after the initial setup.
+
+<br/>
+
 > ***Prompt-Based Commands:*** Users interact with agents using natural language prompts. For instance, typing a prompt like "Open my console" will instruct the agent to open the command line interface.
+
+<br/>
+
 > ***Versatile Use Cases:*** AI Agents can be configured for various purposes, such as managing files, automating processes, or gathering system information.
+
+<br/>
 
 ### Complete local tasks with prompts.
 
 <br/>
 
 ### AI Meets your console with your Local Command Agent
-Take AI to the next step by connecting AI to your local command line!
 
 <br/>
+
+Take AI to the next step by connecting AI to your local command line!
 
 > Elevate your workflow by integrating AI directly into your local command line with the Local Command Agent. This powerful tool brings AI capabilities to your console, enabling you to execute tasks, run commands, and interact with your system in entirely new ways. From automating repetitive tasks to providing real-time insights, the Local Command Agent seamlessly connects AI to your console, unlocking a new level of productivity and efficiency. Whether you're managing files, running scripts, or querying data, this integration allows you to leverage AI's potential right from your terminal, transforming how you interact with your computer.
 
