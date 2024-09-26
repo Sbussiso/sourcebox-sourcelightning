@@ -270,6 +270,8 @@ Take AI to the next step by connecting AI to your local command line!
 
 Easily get caught up and stay in the financial know.
 
+<br/>
+
 > ***Market Overview:*** Ask for a summary of how the stock market performed during the day, with key highlights of trends or major events.
 
 <br/>
