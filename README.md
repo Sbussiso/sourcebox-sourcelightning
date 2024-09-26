@@ -27,6 +27,9 @@
 ## PC Scanner
 ### The PC Scanner app scans your system specs and resources to give you a simplified system report
 
+### Required
+- Internet connection for AI model
+
 <br/>
 
 ### GPU
@@ -51,6 +54,11 @@
 
 ## File Reader
 ### Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
+
+### Required
+- Internet connection for AI model
+- File/Folder Paths to perform RAG
+
 
 ### Supported Files:
 - **Text Files** (.txt, .py, etc.) – handled by read_plain_text().
