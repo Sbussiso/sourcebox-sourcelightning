@@ -111,7 +111,7 @@ Get a full system summar with AI after system analysis.
 
 <br/>
 
-Customers.csv
+> Customers.csv
 ![image](https://github.com/user-attachments/assets/2cdaa7e6-cb0d-4eda-aaec-78147337bdb2)
 
 <br/>
@@ -223,8 +223,8 @@ Perfect for:
 
 
 ## Agents
-- ### Download and execute AI agents built for various tasks localy in your console.
-- ### Complete local tasks with prompts.
+> ### Download and execute AI agents built for various tasks localy in your console.
+  ### Complete local tasks with prompts.
 
 ### Example:
 
