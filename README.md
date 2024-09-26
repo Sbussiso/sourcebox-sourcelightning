@@ -358,7 +358,35 @@ Run an agent connected to your google accounts
 <br/>
 
 ## Getting Into It With Apps
-instructions for pc scanner
+
+### PC Scanner
+
+<br/>
+
+> The PC Scanner app scans your system specs and resources to give you a simplified system report
+
+<br/>
+
+### Getting started
+> First go to https://sourcebox-sourcelightning-8952e6a21707.herokuapp.com
+
+<br/>
+
+> Next, select either "Apps" or "Agents" using the side arrows and click "Show Downloads".
+
+<br/>
+
+> Select your application based on the descriptions and your requirements.
+
+<br/>
+
+> Click "Download", wait a few seconds, and save it to your machine.
+
+<br/>
+
+> Unzip the files. if you do not know how to unzip files  [https://www.google.com/search?q=how+to+unzip+a+file&oq=how+to+unzip+a+file&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDU3ODhqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8]click here
+
+
 
 
 ## Getting into it with Agents
