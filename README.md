@@ -10,6 +10,7 @@
 
 ### Download chatbots to use locally in your console.
 - Choose between models like OpenAI, Mistral, and Gemini
+- Access models quickly and locally, no sign in required
 
 <br/>
 
