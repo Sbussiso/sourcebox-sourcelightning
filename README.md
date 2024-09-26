@@ -26,22 +26,22 @@
 
 <br/>
 
-GPU
+### GPU
   - Scans your GPU type and load
 
 <br/>
 
-CPU
+### CPU
   - Scans your CPU type and load
 
 <br/>
 
-Network
+### Network
   - Scans your network load
 
 <br/>
 
-I/O operations
+### I/O operations
   - Scans your system I/O operations
 
 <br/>
