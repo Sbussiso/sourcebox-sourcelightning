@@ -106,8 +106,8 @@ instructions for pc scanner
 
 <br/>
 
-## Getting into it with PC Scanner
-instructions for pc scanner
+## Getting into it with File Reader
+instructions for file reader
 
 <br/>
 
