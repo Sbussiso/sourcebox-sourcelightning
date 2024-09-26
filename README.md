@@ -18,7 +18,8 @@
 ### Download AI powered application to your local machine
 - Monitor your machine load and specs with a full AI operations summary using PC scanner.
 - Query your local files with our handy File Reader.
-- access quickly and locally, no sign in required
+- Instantly Generate and automatically set PC backgrounds with nothing but a prompt with our Wallpaper Generator.
+- access quickly and locally, no sign in required.
 
 
 <br/>
@@ -110,6 +111,31 @@ instructions for pc scanner
 instructions for file reader
 
 <br/>
+
+## Wallpaper Generator
+### Automatically generate and set AI images as your computer background with nothing but a prompt.
+
+### Required
+- Internet connection for AI model
+
+<br/>
+
+### Image Generation
+  - Wallpaper Generator uses OpenAI DALLE for the image generation
+
+<br/>
+
+### Setting your wallpaper
+  - You do not have to manually set your wallpaper, Wallpaper Generator takes care of setting your wallpaper as well as generating the image
+
+<br/>
+
+
+## Getting into it with Wallpaper Generator
+instructions for Wallpaper Generator
+
+<br/>
+
 
 ## Agents
 - ### Download and execute AI agents built for various tasks localy in your console.
