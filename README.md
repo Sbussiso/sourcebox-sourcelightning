@@ -263,17 +263,15 @@ Take AI to the next step by connecting AI to your local command line!
 
 <br/>
 
-- ### Stay up to date on financial news and stock movements with aditional AI insights
-- ### Get financial predictions and analysis
+### Stay up to date with financial news and recieve well thought out predictions based on prices and events.
 
-### Examples:
+Easily get caught up and stay in the financial know.
 
-"How has apple been performing this week?"
+> Market Overview: Ask for a summary of how the stock market performed during the day, with key highlights of trends or major events.
+> Stock Predictions: Get predictions on where a particular stock might be headed based on recent performance, global events, and market sentiment.
+> Event Impact Analysis: Understand how a major event (such as earnings reports or geopolitical news) could affect stock prices and financial markets.
+
 <br/>
-"based on recent trends where might apples stock be next month?"
-
-<br/>
-
 
 ## Getting into it with PC Scanner
 instructions for pc scanner
