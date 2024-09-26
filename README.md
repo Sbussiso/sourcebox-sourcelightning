@@ -52,6 +52,11 @@
 
 <br/>
 
+## Getting into it with PC Scanner
+instructions for pc scanner
+
+<br/>
+
 ## File Reader
 ### Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
 
@@ -98,6 +103,11 @@
 <br/>
 
 - **INI Configuration Files** (.ini) – handled by read_ini() via configparser.
+
+<br/>
+
+## Getting into it with PC Scanner
+instructions for pc scanner
 
 <br/>
 
