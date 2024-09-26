@@ -84,6 +84,15 @@ Scan your systems disc and disc space
 
 <br/>
 
+## System Summary
+Get a full system summar with AI after system analysis
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/65b44c7a-3864-4043-8cbc-aac2002c0aa9)
+
+<br/>
+
 
 ## File Reader
 ### Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
@@ -91,6 +100,7 @@ Scan your systems disc and disc space
 ### Required
 - Internet connection for AI model
 
+<br/>
 
 ### Supported Files:
 - **Text Files** (.txt, .py, etc.) – handled by read_plain_text().
