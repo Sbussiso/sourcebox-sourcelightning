@@ -393,7 +393,19 @@ Run an agent connected to your google accounts
   [https://www.google.com/search?q=how+to+unzip+a+file&oq=how+to+unzip+a+file&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDU3ODhqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8]
 
 
+<br/>
 
+> Open the unziped folder and find the executable in the "dist" folder.
+
+<br/>
+
+> Run the executable "PC Monitor" When the app starts the scan will begin. Once it is finished the results will be interpreted by the OpenAI model and your system summary will be displayed.
+
+<br/>
+
+> Choose either ***"Run system scan again"*** to perform a fresh new system scan, ***"Regenerate report on last system scan"*** to regenerate a new summary on your previous scan, or **"Exit"** to close the application.
+
+<br/>
 
 ## Getting into it with Agents
 instructions for agents
