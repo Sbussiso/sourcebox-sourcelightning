@@ -360,7 +360,15 @@ Run an agent connected to your google accounts
 <br/>
 <br/>
 
+
+
+
+
+
 ## Getting Into It With Apps
+
+
+
 
 ### PC Scanner
 
@@ -375,11 +383,11 @@ Run an agent connected to your google accounts
 
 <br/>
 
-> Next, select either "Apps" or "Agents" using the side arrows and click "Show Downloads".
+> Next, select either ***"Apps"*** or ***"Agents"*** using the side arrows and click ***"Show Downloads"***. In this case we are selecting ***"Apps"***.
 
 <br/>
 
-> Select your application based on the descriptions and your requirements.
+> Select your application based on the descriptions and your requirements. In this case we are selecting ***"PC Scanner"***.
 
 <br/>
 
@@ -415,6 +423,13 @@ Run an agent connected to your google accounts
 <br/>
 <br/>
 
+
+
+
+
+
+
+
 ### File Reader
 
 <br/>
@@ -428,11 +443,11 @@ Run an agent connected to your google accounts
 
 <br/>
 
-> Next, select ***"Apps"*** using the side arrows and click "Show Downloads".
+> Next, select either ***"Apps"*** or ***"Agents"*** using the side arrows and click ***"Show Downloads"***. In this case we are selecting ***"Apps"***.
 
 <br/>
 
-> Select the ***"File Reader"*** application.
+> Select your application based on the descriptions and your requirements. In this case we are selecting ***File Reader"***.
 
 <br/>
 
@@ -496,6 +511,15 @@ Run an agent connected to your google accounts
 
 <br/>
 <br/>
+<br/>
+<br/>
+
+
+
+
+
+
+
 
 ## Getting into it with Agents
 instructions for agents
