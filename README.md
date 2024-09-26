@@ -103,6 +103,7 @@ Get a full system summar with AI after system analysis.
 
 ### Required
 - Internet connection for AI model
+  > An internet connection is required to access the AI model, as the processing of queries happens through the AI system.
 
 ### How it works:
 
@@ -160,7 +161,10 @@ Customers.csv
 
 <br/>
 
-
+Perfect for:
+- Extracting insights from reports, documents, and datasets.
+- Running queries on your local files with an AI assistant.
+- Quickly accessing relevant information without manually combing through files.
 
 
 
