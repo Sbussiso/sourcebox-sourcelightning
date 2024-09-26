@@ -1,7 +1,7 @@
 # Sorce Lightning
 <br/>
 
-### Source Lightning is a service to provide local AI and templates off the SourceBox platform and straight on to your local machine. Wether you are looking for a quick local chat or building your own project you can count on Source Lightning getting you started lightning fast!
+### Source Lightning is a service to provide local AI and templates off the SourceBox platform and straight on to your local machine. Wether you are looking for a quick local chat, a usefull agent, or building your own project you can count on Source Lightning getting you started lightning fast!
 
 <br>
 <br>
@@ -9,13 +9,32 @@
 ## Chat Applications
 
 ### Download chatbots to use locally in your console.
-  - Choose between models like OpenAI, Mistral, and Gemini
+- Choose between models like OpenAI, Mistral, and Gemini
 
 <br/>
 
 ### Download AI powered application to your local machine
-  - Download usefull AI powerd tools like PC scanner and more
-  
+- Monitor your machine load and specs with a full AI operations summary using PC scanner.
+- Query your local files with our handy File Reader.
+
+
+<br/>
+
+
+### PC Scanner
+- The PC Scanner app scans your system specs and resources to give you a simplified system report
+### GPU:
+  - Scans your GPU type and load
+### CPU
+  - Scans your CPU type and load
+### Network
+  - Scans your network load
+### I/O operations
+  - Scans your system I/O operations
+
+<br/>
+### File Reader
+- Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
 
 
 <br/>
