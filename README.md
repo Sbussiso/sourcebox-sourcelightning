@@ -54,14 +54,41 @@
 
 ### Supported Files:
 - **Text Files** (.txt, .py, etc.) – handled by read_plain_text().
+
+<br/>
+
 - **PDF Files** (.pdf) – handled by read_pdf() via PyPDF2.
+  
+<br/>
+
 - **Word Documents** (.docx) – handled by read_word_doc() via python-docx.
+  
+<br/>
+
 - **Excel Files** (.xlsx) – handled by read_excel() via openpyxl.
+
+<br/>
+
 - **CSV Files** (.csv) – handled by read_csv() via the csv module.
+
+<br/>
+
 - **JSON Files** (.json) – handled by read_json() via the json module.
+
+<br/>
+
 - **HTML Files** (.html) – handled by read_html() via BeautifulSoup.
+
+<br/>
+
 - **XML Files** (.xml) – handled by read_xml() via xml.etree.ElementTree.
+
+<br/>
+
 - **YAML Files** (.yaml, .yml) – handled by read_yaml() via PyYAML.
+
+<br/>
+
 - **INI Configuration Files** (.ini) – handled by read_ini() via configparser.
 
 <br/>
