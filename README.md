@@ -409,6 +409,56 @@ Run an agent connected to your google accounts
 
 <br/>
 
+### File Reader
+
+<br/>
+
+> Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
+
+<br/>
+
+### Getting started
+> First go to https://sourcebox-sourcelightning-8952e6a21707.herokuapp.com
+
+<br/>
+
+> Next, select ***"Apps"*** using the side arrows and click "Show Downloads".
+
+<br/>
+
+> Select the ***"File Reader"*** application.
+
+<br/>
+
+> Click "Download", wait a few seconds, and save it to your machine.
+
+<br/>
+
+> Unzip the files.
+
+<br/>
+
+> If you do not know how to unzip files search here:
+<br/>
+
+  [https://www.google.com/search?q=how+to+unzip+a+file&oq=how+to+unzip+a+file&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDU3ODhqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8]
+
+
+<br/>
+<br/>
+
+> Open the unziped folder and find the executable in the "dist" folder.
+
+<br/>
+
+> Run the executable ***"File Reader"*** When the app starts the scan will begin. Once it is finished the results will be interpreted by the OpenAI model and your system summary will be displayed.
+
+<br/>
+
+> Choose either ***"Run system scan again"*** to perform a fresh new system scan, ***"Regenerate report on last system scan"*** to regenerate a new summary on your previous scan, or **"Exit"** to close the application.
+
+<br/>
+
 ## Getting into it with Agents
 instructions for agents
 
