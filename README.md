@@ -122,12 +122,12 @@ instructions for file reader
 <br/>
 
 ### Image Generation
-  - Wallpaper Generator uses OpenAI DALLE for the image generation
+Wallpaper Generator uses OpenAI DALLE for the image generation
 
 <br/>
 
 ### Setting your wallpaper
-  - You do not have to manually set your wallpaper, Wallpaper Generator takes care of setting your wallpaper as well as generating the image
+You do not have to manually set your wallpaper, Wallpaper Generator takes care of setting your wallpaper as well as generating the image
 
 <br/>
 
