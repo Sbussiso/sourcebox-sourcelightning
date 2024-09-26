@@ -105,8 +105,6 @@
 
 <br/>
 
-
-
 ## Wallpaper Generator
 ### Automatically generate and set AI images as your computer background with nothing but a prompt.
 
@@ -123,6 +121,8 @@ Wallpaper Generator uses OpenAI DALLE for the image generation
 ### Setting your wallpaper
 You do not have to manually set your wallpaper, Wallpaper Generator takes care of setting your wallpaper as well as generating the image
 
+<br/>
+<br/>
 <br/>
 <br/>
 
