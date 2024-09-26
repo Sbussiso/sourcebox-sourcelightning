@@ -102,8 +102,12 @@ Get a full system summar with AI after system analysis
 
 <br/>
 
+Customers.csv
 ![image](https://github.com/user-attachments/assets/2cdaa7e6-cb0d-4eda-aaec-78147337bdb2)
 
+<br/>
+
+![image](https://github.com/user-attachments/assets/bc123448-9bac-42f4-bb59-8d72a65c342c)
 
 <br/>
 
