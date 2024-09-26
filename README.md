@@ -65,7 +65,6 @@ instructions for pc scanner
 
 ### Required
 - Internet connection for AI model
-- File/Folder Paths to perform RAG
 
 
 ### Supported Files:
