@@ -42,6 +42,7 @@
 
 ### CPU
   - Scans your CPU type and load
+![image](https://github.com/user-attachments/assets/dfca8c2e-2ec5-4e67-85a8-d8eda318ad4d)
 
 <br/>
 
