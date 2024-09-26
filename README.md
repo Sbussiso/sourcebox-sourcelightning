@@ -40,8 +40,16 @@
 
 <br/>
 
+![image](https://github.com/user-attachments/assets/bc9602a5-56c7-48bb-a175-9f41aca5417d)
+
+
+<br/>
+
 ### CPU
   - Scans your CPU type and load
+
+<br/>
+
 ![image](https://github.com/user-attachments/assets/dfca8c2e-2ec5-4e67-85a8-d8eda318ad4d)
 
 <br/>
@@ -51,11 +59,30 @@
 
 <br/>
 
-### I/O operations
-  - Scans your system I/O operations
+![image](https://github.com/user-attachments/assets/b2d63c55-aa58-437a-aa5c-3609240bc0df)
+
 
 <br/>
 
+### Memory
+  - Scans your systems memory
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/6dfb255e-ab08-4d55-bd7a-2671096c974f)
+
+
+<br/>
+
+### Disk
+  - Scan your systems disc and disc space
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/fd910846-dd2a-4b19-b873-96e85a90fd3d)
+
+
+<br/>
 
 
 ## File Reader
