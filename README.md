@@ -52,7 +52,7 @@
 ## File Reader
 ### Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
 
-### supported files
+### Supported Files:
 - **Text Files** (.txt, .py, etc.) – handled by read_plain_text().
 - **PDF Files** (.pdf) – handled by read_pdf() via PyPDF2.
 - **Word Documents** (.docx) – handled by read_word_doc() via python-docx.
