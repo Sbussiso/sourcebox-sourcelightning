@@ -36,14 +36,18 @@
 <br/>
 
 ### GPU
-Scans your GPU type and load
+Scans your GPU type and load.
+
+> Scans your GPU type and load, providing detailed information on the current state of your graphics processing unit. This includes the model name, memory usage (both available and used), temperature, and system performance metrics such as the number of physical cores, logical threads, and GPU clock speeds. Additionally, it tracks how much memory is being used by your GPU in real-time, allowing you to monitor its efficiency and temperature during tasks. Keeping an eye on GPU load is crucial for graphic-intensive applications like gaming, 3D modeling, or video rendering. This data helps diagnose potential bottlenecks, overheating issues, or resource constraints.
 
 <br/>
 
 ![image](https://github.com/user-attachments/assets/bc9602a5-56c7-48bb-a175-9f41aca5417d)
 
 ### CPU
-Scans your CPU type and load
+Scans your CPU type and load.
+
+> Scans your CPU type and load, providing real-time insights into your processor’s performance. It includes information such as CPU frequency, the number of physical cores and logical threads, as well as per-core usage statistics. The display also shows load averages over the past 1, 5, and 15 minutes, helping users monitor CPU load over time. Additional system metrics like context switches, interrupts, and system idle time are provided to help you gauge your processor's workload and efficiency. This data is critical for identifying whether your CPU is under heavy load or if there are opportunities to optimize for better performance in multi-core environments.
 
 <br/>
 
