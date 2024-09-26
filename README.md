@@ -245,10 +245,9 @@ Perfect for:
 > ***Versatile Use Cases:*** AI Agents can be configured for various purposes, such as managing files, automating processes, or gathering system information.
 
 <br/>
+<br/>
 
 ### AI Meets your console with your Local Command Agent.
-
-<br/>
 
 Take AI to the next step by connecting AI to your local command line!
 
