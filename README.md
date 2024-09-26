@@ -246,11 +246,7 @@ Perfect for:
 
 <br/>
 
-### Complete local tasks with prompts.
-
-<br/>
-
-### AI Meets your console with your Local Command Agent
+### AI Meets your console with your Local Command Agent.
 
 <br/>
 
