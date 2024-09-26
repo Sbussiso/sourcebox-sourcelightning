@@ -152,6 +152,11 @@ Customers.csv
 
 <br/>
 
+
+
+
+
+
 ## Wallpaper Generator
 ### Automatically generate and set AI images as your computer background with nothing but a prompt.
 
@@ -169,9 +174,28 @@ Wallpaper Generator uses OpenAI DALLE for the image generation
 You do not have to manually set your wallpaper, Wallpaper Generator takes care of setting your wallpaper as well as generating the image
 
 <br/>
+
+![image](https://github.com/user-attachments/assets/1ed9d998-2cff-4194-b7f3-dfd86cffbe0e)
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/d0ebe9f1-db9e-4128-8505-39ba4e184763)
+
+
+
+
+
+
 <br/>
 <br/>
 <br/>
+<br/>
+
+
+
+
+
+
 
 ## Agents
 - ### Download and execute AI agents built for various tasks localy in your console.
