@@ -228,9 +228,16 @@ Perfect for:
 
 ### Examples:
 
-"Open my command console."
+"Open my console."
+![image](https://github.com/user-attachments/assets/197de441-fbc2-4315-ae95-402e6562fe0c)
+
 <br/>
+
 "Create a text file on my desktop."
+![image](https://github.com/user-attachments/assets/a95783ed-82f0-4d3b-b842-e5df625dc54b)
+
+<br/>
+
 
 - ### Stay up to date on financial news and stock movements with aditional AI insights
 - ### Get financial predictions and analysis
