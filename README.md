@@ -99,8 +99,14 @@ Get a full system summar with AI after system analysis.
 ## File Reader
 ### Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
 
+> The File Reader app allows you to easily interact with and query your local files using a chatbot powered by AI, enabling seamless integration between your local machine and advanced AI models. By leveraging this tool, users can open, read, and analyze a variety of file types directly from their local storage, making it simple to extract information and run queries on documents or data sets.
+
 ### Required
 - Internet connection for AI model
+
+### How it works:
+
+> Simply upload a supported file, and the app will parse and analyze the content using a suitable handler based on the file type. The AI then uses this parsed data to generate responses and insights, allowing for interactive discussions with your files.
 
 <br/>
 
