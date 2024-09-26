@@ -53,16 +53,16 @@
 ### Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
 
 ### supported files
-- Text files (.txt, .py, etc.) – handled by read_plain_text().
-- PDF files (.pdf) – handled by read_pdf() via PyPDF2.
-- Word documents (.docx) – handled by read_word_doc() via python-docx.
-- Excel files (.xlsx) – handled by read_excel() via openpyxl.
-- CSV files (.csv) – handled by read_csv() via the csv module.
-- JSON files (.json) – handled by read_json() via the json module.
-- HTML files (.html) – handled by read_html() via BeautifulSoup.
-- XML files (.xml) – handled by read_xml() via xml.etree.ElementTree.
-- YAML files (.yaml, .yml) – handled by read_yaml() via PyYAML.
-- INI configuration files (.ini) – handled by read_ini() via configparser.
+- **Text Files** (.txt, .py, etc.) – handled by read_plain_text().
+- **PDF Files** (.pdf) – handled by read_pdf() via PyPDF2.
+- **Word Documents** (.docx) – handled by read_word_doc() via python-docx.
+- **Excel Files** (.xlsx) – handled by read_excel() via openpyxl.
+- **CSV Files** (.csv) – handled by read_csv() via the csv module.
+- **JSON Files** (.json) – handled by read_json() via the json module.
+- **HTML Files** (.html) – handled by read_html() via BeautifulSoup.
+- **XML Files** (.xml) – handled by read_xml() via xml.etree.ElementTree.
+- **YAML Files** (.yaml, .yml) – handled by read_yaml() via PyYAML.
+- **INI Configuration Files** (.ini) – handled by read_ini() via configparser.
 
 <br/>
 
