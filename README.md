@@ -313,6 +313,38 @@ an agent with a code interpreter and stack exchange knowlege
 
 <br/>
 
+### Access and query your Google Resources with Google Agent.
+
+Run an agent connected to your google accounts
+
+<br>
+
+> The Google Agent allows seamless integration with your Google account, providing access to key resources like Gmail, Google Drive, Google Sheets, Google Docs, and more. By connecting directly to your Google services, this agent enables you to manage, query, and automate tasks across your Google ecosystem—all through simple prompts.
+
+<br/>
+
+### Features
+<br>
+> Gmail Integration: Query your email for specific messages, organize your inbox, or even send emails directly through the agent. Use prompts to find unread emails, search for messages based on keywords, or create drafts.
+
+<br/>
+
+> Google Drive Access: Navigate and manage your Google Drive by searching for files, organizing folders, or retrieving document details. The agent can also help you upload or download files, allowing you to manage your cloud storage with ease.
+
+<br/>
+
+> Google Sheets Queries: Work with spreadsheets by querying and updating your Google Sheets. Whether you need to retrieve specific data, perform calculations, or update cells, the agent helps automate your workflow.
+
+<br/>
+
+> Google Docs Automation: Access and manipulate documents in Google Docs. Create new documents, search for keywords within documents, or make updates to existing content without needing to open Docs manually.
+
+<br/>
+
+> Calendar Management: Query and update your Google Calendar by adding events, checking upcoming appointments, or receiving reminders. The agent simplifies calendar management by syncing directly with your schedule.
+
+<br/>
+
 ## Getting Into It With Apps
 instructions for pc scanner
 
