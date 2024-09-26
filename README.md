@@ -36,7 +36,7 @@
 <br/>
 
 ### GPU
-  - Scans your GPU type and load
+Scans your GPU type and load
 
 <br/>
 
@@ -46,7 +46,7 @@
 <br/>
 
 ### CPU
-  - Scans your CPU type and load
+Scans your CPU type and load
 
 <br/>
 
@@ -55,7 +55,7 @@
 <br/>
 
 ### Network
-  - Scans your network load
+Scans your network load
 
 <br/>
 
@@ -65,7 +65,7 @@
 <br/>
 
 ### Memory
-  - Scans your systems memory
+Scans your systems memory
 
 <br/>
 
@@ -75,7 +75,7 @@
 <br/>
 
 ### Disk
-  - Scan your systems disc and disc space
+Scan your systems disc and disc space
 
 <br/>
 
