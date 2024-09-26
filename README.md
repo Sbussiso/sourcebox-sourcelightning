@@ -475,6 +475,8 @@ Run an agent connected to your google accounts
 
 > Run the executable ***"File Reader"*** When the app starts select either ***"Query file contents"*** to query using a single file, ***"Query directory contents"*** to query all the contents in a folder (to many files will result in an error), ***"Raw query"*** to directly query the data itself, or ***"Exit"*** to close the program.
 
+<br/>
+
 ### Query File Contents:
 
 <br/>
