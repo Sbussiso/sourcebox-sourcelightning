@@ -12,6 +12,8 @@
 - Choose between models like OpenAI, Mistral, and Gemini
 - Access models quickly and locally, no sign in required
 
+### best for quick queries or when you dont feel like logging in!
+
 
 <br/>
 
