@@ -262,6 +262,7 @@ Take AI to the next step by connecting AI to your local command line!
 ![image](https://github.com/user-attachments/assets/a95783ed-82f0-4d3b-b842-e5df625dc54b)
 
 <br/>
+<br/>
 
 ### Stay up to date with financial news and recieve well thought out predictions based on prices and events.
 
