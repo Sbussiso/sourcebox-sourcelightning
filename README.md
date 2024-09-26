@@ -454,12 +454,32 @@ Run an agent connected to your google accounts
 
 <br/>
 
-> Run the executable ***"File Reader"*** When the app starts the scan will begin. Once it is finished the results will be interpreted by the OpenAI model and your system summary will be displayed.
+> Run the executable ***"File Reader"*** When the app starts select either ***"Query file contents"*** to query using a single file, ***"Query directory contents"*** to query all the contents in a folder (to many files will result in an error), ***"Raw query"*** to directly query the data itself, or ***"Exit"*** to close the program.
+
+### Query File Contents:
 
 <br/>
 
-> Choose either ***"Run system scan again"*** to perform a fresh new system scan, ***"Regenerate report on last system scan"*** to regenerate a new summary on your previous scan, or **"Exit"** to close the application.
+> Enter the full file path to the file you want to query.
 
+<br>
+
+> Enter a prompt to send with the file. Your Response will display once generated.
+
+<br>
+
+### Query Directory Contents:
+
+<br/>
+
+> Enter the full folder path to the folder you want to query.
+
+<br>
+
+> Enter a prompt to send with the folder data. Your Response will display once generated.
+
+
+<br/>
 <br/>
 
 ## Getting into it with Agents
