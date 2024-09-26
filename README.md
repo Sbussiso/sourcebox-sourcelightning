@@ -23,13 +23,13 @@
 
 ### PC Scanner
 - The PC Scanner app scans your system specs and resources to give you a simplified system report
-### GPU:
+GPU
   - Scans your GPU type and load
-### CPU
+CPU
   - Scans your CPU type and load
-### Network
+Network
   - Scans your network load
-### I/O operations
+I/O operations
   - Scans your system I/O operations
 
 <br/>
