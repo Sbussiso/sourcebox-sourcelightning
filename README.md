@@ -45,6 +45,7 @@ I/O operations
   - Scans your system I/O operations
 
 <br/>
+
 ### File Reader
 - Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
 
