@@ -84,7 +84,7 @@ Scan your systems disc and disc space
 
 <br/>
 
-## System Summary
+### System Summary
 Get a full system summar with AI after system analysis
 
 <br/>
