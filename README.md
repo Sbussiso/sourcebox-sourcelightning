@@ -1,7 +1,7 @@
 # Sorce Lightning
 <br/>
 
-### Source Lightning is a service to provide local AI and templates off the SourceBox platform and straight on to your local machine. Wether you are looking for a quick local chat, a usefull agent, or building your own project you can count on Source Lightning getting you started lightning fast!
+> ### Source Lightning is a service to provide local AI and templates off the SourceBox platform and straight on to your local machine. Wether you are looking for a quick local chat, a usefull agent, or building your own project you can count on Source Lightning getting you started lightning fast!
 
 <br>
 <br>
