@@ -284,6 +284,11 @@ Easily get caught up and stay in the financial know.
 
 <br/>
 
+(insert console image 1)
+(insert console image 2)
+
+<br/>
+
 ## Getting into it with PC Scanner
 instructions for pc scanner
 
