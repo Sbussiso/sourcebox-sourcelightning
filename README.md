@@ -121,6 +121,9 @@ Customers.csv
 <br/>
 
 ### Supported Files:
+
+<br/>
+
 - **Text Files** (.txt, .py, etc.) – handled by read_plain_text().
 
 <br/>
