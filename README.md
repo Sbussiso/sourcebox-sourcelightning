@@ -175,7 +175,8 @@ You do not have to manually set your wallpaper, Wallpaper Generator takes care o
 
 <br/>
 
-![image](https://github.com/user-attachments/assets/1ed9d998-2cff-4194-b7f3-dfd86cffbe0e)
+![image](https://github.com/user-attachments/assets/c498ee9b-d2f6-4cbb-9ce5-26e101763db3)
+
 
 <br/>
 
