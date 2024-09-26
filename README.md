@@ -54,7 +54,7 @@ Scans your network load.
 
 <br/>
 
-Scans your network load and provides detailed statistics about the current state of your network interfaces. This data includes the amount of data sent and received over each interface, as well as the number of packets transmitted and received. It also tracks any errors in transmission and reception, as well as packet drops. Monitoring your network load is essential for identifying bottlenecks, optimizing performance, and troubleshooting connectivity issues. This information can help you diagnose problems such as slow internet connections, packet loss, or network interface failures.
+> Scans your network load and provides detailed statistics about the current state of your network interfaces. This data includes the amount of data sent and received over each interface, as well as the number of packets transmitted and received. It also tracks any errors in transmission and reception, as well as packet drops. Monitoring your network load is essential for identifying bottlenecks, optimizing performance, and troubleshooting connectivity issues. This information can help you diagnose problems such as slow internet connections, packet loss, or network interface failures.
 
 <br/>
 
@@ -65,7 +65,7 @@ Scans your systems memory.
 
 <br/>
 
-Scans your system’s memory usage and provides a breakdown of available, used, and cached memory. It also shows important details such as the amount of swap space in use, cache memory, and memory allocated for system buffers. This insight is crucial for understanding how your system is handling memory resources, whether it's running efficiently or if it's at risk of running out of memory. Monitoring memory usage helps prevent system slowdowns and ensures optimal performance by identifying when you need to free up memory or increase system resources.
+> Scans your system’s memory usage and provides a breakdown of available, used, and cached memory. It also shows important details such as the amount of swap space in use, cache memory, and memory allocated for system buffers. This insight is crucial for understanding how your system is handling memory resources, whether it's running efficiently or if it's at risk of running out of memory. Monitoring memory usage helps prevent system slowdowns and ensures optimal performance by identifying when you need to free up memory or increase system resources.
 
 <br/>
 
