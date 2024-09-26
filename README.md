@@ -97,6 +97,7 @@ Get a full system summar with AI after system analysis.
 
 
 ## File Reader
+
 ### Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
 
 > The File Reader app allows you to easily interact with and query your local files using a chatbot powered by AI, enabling seamless integration between your local machine and advanced AI models. By leveraging this tool, users can open, read, and analyze a variety of file types directly from their local storage, making it simple to extract information and run queries on documents or data sets.
@@ -111,7 +112,7 @@ Get a full system summar with AI after system analysis.
 
 <br/>
 
-> Customers.csv
+> ### Customers.csv
 ![image](https://github.com/user-attachments/assets/2cdaa7e6-cb0d-4eda-aaec-78147337bdb2)
 
 <br/>
@@ -228,7 +229,7 @@ Perfect for:
 
 ### Example:
 
-> "Open my console."
+> ### "Open my console."
 ![image](https://github.com/user-attachments/assets/197de441-fbc2-4315-ae95-402e6562fe0c)
 ![image](https://github.com/user-attachments/assets/a95783ed-82f0-4d3b-b842-e5df625dc54b)
 
