@@ -102,7 +102,8 @@ Get a full system summar with AI after system analysis
 
 <br/>
 
-![image](https://github.com/user-attachments/assets/59e6ca75-ee70-4da8-b953-b2b8a7bcfc3a)
+![image](https://github.com/user-attachments/assets/2cdaa7e6-cb0d-4eda-aaec-78147337bdb2)
+
 
 <br/>
 
