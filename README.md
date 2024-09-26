@@ -175,18 +175,27 @@ Perfect for:
 ## Wallpaper Generator
 ### Automatically generate and set AI images as your computer background with nothing but a prompt.
 
+> Transform your desktop effortlessly by generating stunning AI-driven images to use as your wallpaper with just a simple prompt. The Wallpaper Generator combines cutting-edge AI technology with seamless automation to bring your imagination to life and set it as your computer background instantly.
+
 ### Required
 - Internet connection for AI model
+  > An internet connection is needed to access the AI model for image generation.
 
 <br/>
 
 ### Image Generation
-Wallpaper Generator uses OpenAI DALLE for the image generation
+> Wallpaper Generator uses OpenAI DALLE for the image generation
+
+### How it Works:
+
+> Using OpenAI's powerful DALLE model, the Wallpaper Generator interprets your prompt and creates a high-quality image specifically tailored to be used as your desktop background. From landscapes to abstract art, the possibilities are endless.
+
 
 <br/>
 
 ### Setting your wallpaper
-You do not have to manually set your wallpaper, Wallpaper Generator takes care of setting your wallpaper as well as generating the image
+
+> No need to manually set the generated images yourself. The Wallpaper Generator handles the entire process from creation to application, automatically updating your background with the newly created image, saving you time and effort. Whether you’re looking for a serene nature scene, futuristic cityscapes, or personalized artwork, simply enter your desired prompt, and the Wallpaper Generator will handle the rest. It’s never been easier to refresh your workspace with unique, AI-generated art!
 
 <br/>
 
