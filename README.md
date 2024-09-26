@@ -309,6 +309,10 @@ an agent with a code interpreter and stack exchange knowlege
 
 <br/>
 
+(console image 1) (console image 2)
+
+<br/>
+
 ## Getting Into It With Apps
 instructions for pc scanner
 
