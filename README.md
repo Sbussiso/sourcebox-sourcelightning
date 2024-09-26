@@ -266,7 +266,7 @@ Take AI to the next step by connecting AI to your local command line!
 <br/>
 <br/>
 
-### Stay up to date with financial news and recieve well thought out predictions based on prices and events.
+### Stay up to date with financial news and get predictions with Finance Agent.
 
 Easily get caught up and stay in the financial know.
 
@@ -284,19 +284,34 @@ Easily get caught up and stay in the financial know.
 
 <br/>
 
-(insert console image 1)
-(insert console image 2)
+### Get more knowlegabe help with your coding projects with Code Agent.
+
+an agent with a code interpreter and stack exchange knowlege
 
 <br/>
 
-## Getting into it with PC Scanner
+> The Code Agent is a powerful AI tool designed to assist with coding projects by offering real-time code interpretation and troubleshooting support. Equipped with a built-in code interpreter and extensive knowledge from Stack Exchange, this agent can help developers of all skill levels improve their code, debug issues, and explore best practices.
+
+### Features:
+> ***Code Interpretation:*** The Code Agent can evaluate and execute code snippets, allowing you to test, debug, and refine your programs within your local environment. Whether you're writing Python, JavaScript, or other languages, the Code Agent helps by analyzing your code for errors and offering real-time solutions.
+
+<br/>
+
+> ***Stack Exchange Integration:*** Leveraging the vast knowledge base of Stack Exchange, the agent can provide solutions to common coding problems, answer questions about programming concepts, and suggest optimal coding patterns. This ensures you have access to a wealth of community-driven knowledge without needing to leave your environment.
+
+<br/>
+
+> ***Language Support:*** The Code Agent supports a wide range of programming languages and can assist with syntax clarification, function explanations, and even performance optimization tips based on the language you're using.
+
+<br/>
+
+> ***Error Debugging:*** Easily diagnose issues in your code with detailed explanations of error messages, suggestions for fixes, and links to relevant resources. This allows you to quickly resolve bugs and keep your project on track.
+
+<br/>
+
+## Getting Into It With Apps
 instructions for pc scanner
 
-## Getting into it with File Reader
-instructions for file reader
-
-## Getting into it with Wallpaper Generator
-instructions for Wallpaper Generator
 
 ## Getting into it with Agents
 instructions for agents
