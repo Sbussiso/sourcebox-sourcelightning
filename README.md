@@ -43,8 +43,6 @@ Scans your GPU type and load
 ![image](https://github.com/user-attachments/assets/bc9602a5-56c7-48bb-a175-9f41aca5417d)
 
 
-<br/>
-
 ### CPU
 Scans your CPU type and load
 
