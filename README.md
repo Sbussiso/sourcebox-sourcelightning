@@ -324,7 +324,9 @@ Run an agent connected to your google accounts
 <br/>
 
 ### Features
+
 <br>
+
 > Gmail Integration: Query your email for specific messages, organize your inbox, or even send emails directly through the agent. Use prompts to find unread emails, search for messages based on keywords, or create drafts.
 
 <br/>
@@ -342,6 +344,10 @@ Run an agent connected to your google accounts
 <br/>
 
 > Calendar Management: Query and update your Google Calendar by adding events, checking upcoming appointments, or receiving reminders. The agent simplifies calendar management by syncing directly with your schedule.
+
+<br/>
+
+(console image 1) (console image 2)
 
 <br/>
 
