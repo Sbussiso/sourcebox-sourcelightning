@@ -476,8 +476,19 @@ Run an agent connected to your google accounts
 
 <br>
 
-> Enter a prompt to send with the folder data. Your Response will display once generated.
+> Enter a prompt to send with the folder data. Your Response will be displayed once generated.
 
+<br/>
+
+### Raw Query
+
+<br/>
+
+> Enter the full path to the folder or file you want to query.
+
+<br/>
+
+> Enter a prompt to perform a raw query on your data. Your response will be displayed once the query has finished.
 
 <br/>
 <br/>
