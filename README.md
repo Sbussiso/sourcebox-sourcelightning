@@ -22,7 +22,7 @@
 
 
 ## PC Scanner
-The PC Scanner app scans your system specs and resources to give you a simplified system report
+### The PC Scanner app scans your system specs and resources to give you a simplified system report
 
 <br/>
 
@@ -47,7 +47,7 @@ I/O operations
 <br/>
 
 ## File Reader
-Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
+### Use the File Reader app to query your local files with a chatbot connecting your local machine to AI
 
 
 <br/>
