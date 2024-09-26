@@ -312,6 +312,9 @@ an agent with a code interpreter and stack exchange knowlege
 (console image 1) (console image 2)
 
 <br/>
+<br/>
+<br/>
+<br/>
 
 ### Access and query your Google Resources with Google Agent.
 
@@ -349,6 +352,9 @@ Run an agent connected to your google accounts
 
 (console image 1) (console image 2)
 
+<br/>
+<br/>
+<br/>
 <br/>
 
 ## Getting Into It With Apps
