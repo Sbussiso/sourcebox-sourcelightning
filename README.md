@@ -635,8 +635,9 @@ Local Command Agent gives your AI the power of your console.
 
 <br/>
  
->  "Open Console"
->  "Create a text file and save it to my desktop"
+- "Open Console"
+- "Create a text file called 'agent_test' and save it to my desktop"
+- "write a reminder 'Take out the trash tonight' to my text file 'agent_test.txt located on my desktop."
 
 
 
