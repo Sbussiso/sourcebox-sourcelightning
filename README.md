@@ -587,5 +587,58 @@ Run an agent connected to your google accounts
 
 
 ## Getting into it with Agents
-instructions for agents
+Download and execute AI agents built for various tasks localy in your console.
+
+<br/>
+
+### Local Command Agent
+
+Local Command Agent gives your AI the power of your console.
+
+### Getting started
+> First go to https://sourcebox-sourcelightning-8952e6a21707.herokuapp.com
+
+<br/>
+
+> Next, select either ***"Apps"*** or ***"Agents"*** using the side arrows and click ***"Show Downloads"***. In this case we are selecting ***"Agents"***.
+
+<br/>
+
+> Select your application based on the descriptions and your requirements. In this case we are selecting ***"Local Command Agent"***.
+
+<br/>
+
+> Click "Download", wait a few seconds, and save it to your machine.
+
+<br/>
+
+> Unzip the files.
+
+<br/>
+
+> If you do not know how to unzip files search here:
+
+<br/>
+
+[https://www.google.com/searchq=how+to+unzip+a+file&oq=how+to+unzip+a+file&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDU3ODhqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8]
+
+
+<br/>
+<br/>
+
+> Open the unziped folder and find the executable in the "dist" folder.
+
+<br/>
+
+> Start the application and enter the prompt for the operation you wish to perform.
+> Examples:
+
+<br/>
+ 
+>  "Open Console"
+>  "Create a text file and save it to my desktop"
+
+
+
+<br/>
 
