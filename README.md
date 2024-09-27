@@ -31,7 +31,7 @@
 ### The PC Scanner app scans your system specs and resources to give you a simplified system report
 
 ### Required
-- Internet connection for AI model
+> Internet connection for AI model
 
 <br/>
 
@@ -103,8 +103,11 @@ Get a full system summar with AI after system analysis.
 > The File Reader app allows you to easily interact with and query your local files using a chatbot powered by AI, enabling seamless integration between your local machine and advanced AI models. By leveraging this tool, users can open, read, and analyze a variety of file types directly from their local storage, making it simple to extract information and run queries on documents or data sets.
 
 ### Required
-- Internet connection for AI model
-  > An internet connection is required to access the AI model, as the processing of queries happens through the AI system.
+Internet connection for AI model
+
+<br/>
+
+> An internet connection is required to access the AI model, as the processing of queries happens through the AI system.
 
 ### How it works:
 
