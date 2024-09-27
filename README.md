@@ -631,13 +631,16 @@ Local Command Agent gives your AI the power of your console.
 <br/>
 
 > Start the application and enter the prompt for the operation you wish to perform.
-> Examples:
+
+<br/>
+
+### Prompt examples:
 
 <br/>
  
 - "Open Console"
 - "Create a text file called 'agent_test' and save it to my desktop"
-- "write a reminder 'Take out the trash tonight' to my text file 'agent_test.txt located on my desktop."
+- "write a reminder 'Take out the trash tonight' to my text file 'agent_test.txt' located on my desktop."
 
 
 
