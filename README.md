@@ -567,7 +567,7 @@ Run an agent connected to your google accounts
 
 <br/>
 
-> Start your application and enter a prompt, wait for the app to finish, and Thats it! Change your background as many times as you want automatically.
+> ***Start your application and enter a prompt***, wait for the app to finish, and Thats it! Change your background as many times as you want automatically.
 
 <br/>
 
