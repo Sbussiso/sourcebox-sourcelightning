@@ -109,7 +109,7 @@ Internet connection for AI model
 
 > An internet connection is required to access the AI model, as the processing of queries happens through the AI system.
 
-### How it works:
+### How it works
 
 > Simply upload a supported file, and the app will parse and analyze the content using a suitable handler based on the file type. The AI then uses this parsed data to generate responses and insights, allowing for interactive discussions with your files.
 
@@ -124,7 +124,7 @@ Internet connection for AI model
 
 <br/>
 
-### Supported Files:
+### Supported Files
 
 <br/>
 
@@ -193,7 +193,7 @@ Perfect for:
 ### Image Generation
 > Wallpaper Generator uses OpenAI DALLE for the image generation
 
-### How it Works:
+### How it Works
 
 > Using OpenAI's powerful DALLE model, the Wallpaper Generator interprets your prompt and creates a high-quality image specifically tailored to be used as your desktop background. From landscapes to abstract art, the possibilities are endless.
 
@@ -261,7 +261,7 @@ Take AI to the next step by connecting AI to your local command line!
 
 <br/>
 
-### Example:
+### Example
 
 >  "Open my console."
 ![image](https://github.com/user-attachments/assets/197de441-fbc2-4315-ae95-402e6562fe0c)
