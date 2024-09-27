@@ -714,3 +714,72 @@ Local Command Agent gives your AI the power of your console.
 
 
 
+### Code Agent
+
+<br/>
+
+> An agent with a code interpreter and stack exchange knowlege.
+
+<br/>
+
+### Getting Started
+
+<br/>
+
+> First go to https://sourcebox-sourcelightning-8952e6a21707.herokuapp.com
+
+<br/>
+
+> Next, select either ***"Apps"*** or ***"Agents"*** using the side arrows and click ***"Show Downloads"***. In this case we are selecting ***"Agents"***.
+
+<br/>
+
+> Select your application based on the descriptions and your requirements. In this case we are selecting ***"Code Agent"***.
+
+<br/>
+
+> Click "Download", wait a few seconds, and save it to your machine.
+
+<br/>
+
+> Unzip the files.
+
+<br/>
+
+> If you do not know how to unzip files search here:
+
+<br/>
+
+[https://www.google.com/searchq=how+to+unzip+a+file&oq=how+to+unzip+a+file&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDU3ODhqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8]
+
+
+<br/>
+<br/>
+
+> Open the unziped folder and find the executable in the "dist" folder.
+
+<br/>
+
+> Start the application and enter your query to the Code Agent.
+
+<br/>
+
+### Prompts:
+
+<br/>
+ 
+- Pass in code and errors.
+- test code quickly
+- look up possilbe solutions
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+
+
