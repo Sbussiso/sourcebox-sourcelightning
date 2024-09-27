@@ -524,6 +524,66 @@ Run an agent connected to your google accounts
 
 
 
+### Wallpaper Generator
+
+<br/>
+
+> Use the Wallpaper Generator to generate and set images as your machines wallpaper background.
+
+<br/>
+
+### Getting started
+> First go to https://sourcebox-sourcelightning-8952e6a21707.herokuapp.com
+
+<br/>
+
+> Next, select either ***"Apps"*** or ***"Agents"*** using the side arrows and click ***"Show Downloads"***. In this case we are selecting ***"Apps"***.
+
+<br/>
+
+> Select your application based on the descriptions and your requirements. In this case we are selecting ***Wallpaper Generator"***.
+
+<br/>
+
+> Click "Download", wait a few seconds, and save it to your machine.
+
+<br/>
+
+> Unzip the files.
+
+<br/>
+
+> If you do not know how to unzip files search here:
+
+<br/>
+
+[https://www.google.com/searchq=how+to+unzip+a+file&oq=how+to+unzip+a+file&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDU3ODhqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8]
+
+
+<br/>
+<br/>
+
+> Open the unziped folder and find the executable in the "dist" folder.
+
+<br/>
+
+> Start your application and enter a prompt, wait for the app to finish, and Thats it! Change your background as many times as you want automatically.
+
+<br/>
+
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+
+
 
 
 ## Getting into it with Agents
