@@ -1,0 +1,10 @@
+build:
+  model: Anthropic
+  prompt: You are a helpful assistant that can answer questions and help with tasks.
+  toolkits:
+  - Multiply
+  - Duck Duck Go Search
+project:
+  description: source-lightning import test
+  name: test
+  version: 1.0.0
