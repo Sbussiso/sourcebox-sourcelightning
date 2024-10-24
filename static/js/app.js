@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('providerSelect').addEventListener('change', function() {
         var selectedModel = this.options[this.selectedIndex].text;
         console.log("Model selected:", selectedModel);
+
         var modelCard = document.getElementById('modelCard');
         var modelText = document.getElementById('modelText');
         var addTools = document.getElementById('addTools');
@@ -19,9 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
             addScenarios.style.display = 'block';  // Show the Add Scenarios section
             checkCompileContent(); // Check content after model selection
         } else {
-            modelCard.style.display = 'none';  // Hide the card if no model is selected
-            addTools.style.display = 'none';  // Hide the Add Tools section
-            addScenarios.style.display = 'none';  // Hide the Add Scenarios section
+            modelCard.style.display = 'none';
+            addTools.style.display = 'none';
+            addScenarios.style.display = 'none';
+            console.log("Model card, tools, and scenarios sections hidden.");
         }
     });
 
@@ -29,14 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('toolSelect').addEventListener('change', function() {
         var selectedToolkit = this.options[this.selectedIndex].text;
         console.log("Toolkit selected:", selectedToolkit);
+
         var toolkitCard = document.getElementById('toolkitCard');
         var toolkitText = document.getElementById('toolkitText');
 
         if (selectedToolkit !== "Select Tool") {
             toolkitText.textContent = "Selected Toolkit: " + selectedToolkit;
-            toolkitCard.style.display = 'block';  // Show the toolkit card
+            toolkitCard.style.display = 'block';
+            console.log("Toolkit card displayed.");
         } else {
-            toolkitCard.style.display = 'none';  // Hide the toolkit card if no toolkit is selected
+            toolkitCard.style.display = 'none';
+            console.log("Toolkit card hidden.");
         }
     });
 
@@ -44,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('addToolkitButton').addEventListener('click', function() {
         var selectedToolkit = document.getElementById('toolkitText').textContent.replace('Selected Toolkit: ', '');
         console.log("Add toolkit button clicked. Toolkit to add:", selectedToolkit);
+
         var rightColumn = document.querySelector('.right-column');
 
         if (selectedToolkit !== "None" && !selectedToolkits.includes(selectedToolkit) && selectedToolkits.length < 3) {
@@ -51,11 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log("Toolkit added:", selectedToolkit, "Current toolkits:", selectedToolkits);
 
             rightColumn.style.display = 'block';
-
-            // Clear previous content
             rightColumn.querySelector('.card-body').innerHTML = '';
 
-            // Display all selected toolkits
             selectedToolkits.forEach(toolkit => {
                 var toolkitCard = document.createElement('div');
                 toolkitCard.className = 'card mt-2';
@@ -66,10 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 rightColumn.querySelector('.card-body').appendChild(toolkitCard);
             });
 
-            // Reset selection and hide toolkit card
+            console.log("Displayed selected toolkits in the right column.");
+
             document.getElementById('toolSelect').selectedIndex = 0;
             document.getElementById('toolkitCard').style.display = 'none';
             document.getElementById('toolkitText').textContent = "Selected Toolkit: None";
+        } else {
+            console.log("Toolkit not added. Either it's already selected or the limit is reached.");
         }
     });
 
@@ -80,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             var promptText = this.value.trim();
             console.log("Prompt submitted:", promptText);
+
             var rightColumn = document.querySelector('.right-column');
 
             if (promptText && selectedToolkits.length > 0) {
@@ -252,10 +259,10 @@ project:
                 console.log("Template assembled successfully:", assembleData);
                 alert(assembleData.message);
 
-                document.getElementById('assemblyCode').innerHTML = `<pre>${assembleData.final_template}</pre>`;
+                document.getElementById('assemblyCode').innerHTML = `<pre>${assembleData.final_template.replace(/```python|```/g, '')}</pre>`;
                 document.getElementById('assemblyRequirementsHeader').style.display = 'block';
                 document.getElementById('assemblyRequirements').style.display = 'block';
-                document.getElementById('assemblyRequirements').innerHTML = `<pre>${assembleData.requirements}</pre>`;
+                document.getElementById('assemblyRequirements').innerHTML = `<pre>${assembleData.requirements.replace(/```/g, '')}</pre>`;
             })
             .catch(error => console.error('Error during assembly:', error));
 
@@ -270,7 +277,7 @@ project:
 
     // Handle test agent button click
     testAgentButton.addEventListener('click', function() {
-        console.log("Testing agent...");
+        console.log("Test Agent button clicked.");
 
         // Show the modal
         const modalElement = document.querySelector('.modal');
@@ -286,16 +293,19 @@ project:
         })
         .then(response => response.json())
         .then(data => {
-            console.log("Test agent response:", data);
+            console.log("Test agent response received:", data);
 
-            // Display the response message in the modal
+            const modalElement = document.querySelector('.modal');
             const modalBody = modalElement.querySelector('.modal-body');
             modalBody.textContent = data.message;
+
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
         })
         .catch(error => {
             console.error('Error testing agent:', error);
 
-            // Display error message in the modal
+            const modalElement = document.querySelector('.modal');
             const modalBody = modalElement.querySelector('.modal-body');
             modalBody.textContent = 'Error testing agent. Please try again later.';
         });

@@ -231,11 +231,11 @@ def generate_requirements(final_template, build_file_path):
                 in: code ==> out: requirements.txt
 
                 Example:
-                package1==1.8.2
-                package2==8.1.7
-                package3==0.4.6
-                package4==3.0.3
-                package5==5.0.0
+                package1
+                package2
+                package3
+                package4
+                package5
                 '''},
                 {"role": "user", "content": final_template}
             ]
@@ -314,6 +314,3 @@ if __name__ == "__main__":
 
     print("\n\nExporting Template.........\n\n")
     export_final_template(final_template)
-
-
-

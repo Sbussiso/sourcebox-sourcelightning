@@ -1,8 +1,0 @@
-```
-python-dotenv
-os
-langchain-nvidia-ai-endpoints
-langgraph
-langchain-community
-langchain-core
-```

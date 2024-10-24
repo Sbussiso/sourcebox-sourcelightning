@@ -13,6 +13,10 @@ from build import gather_templates, compile_templates, gpt_rewrite, export_final
 import logging
 import zipfile
 from datetime import timedelta
+from agent_testing import test_agent
+import threading
+from flask_socketio import SocketIO, emit
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -292,6 +296,8 @@ def display_config():
     logger.info("Returning configuration data as JSON.")
     return jsonify(config_data)
 
+
+
 @app.route('/assemble-config', methods=['POST'])
 def assemble_config():
     config_file_path = session.get('config_file_path')  # Get from session
@@ -330,14 +336,26 @@ def assemble_config():
         with open(requirements_file_path, 'w') as req_file:
             req_file.write(requirements)
 
-        # Store the paths in the session
+        # Store the paths and data in the session
         session['template_file_path'] = template_file_path
         session['requirements_file_path'] = requirements_file_path
         session['build_file_destination_path'] = build_file_destination_path
+        session['requirements'] = requirements
+        session['code_template'] = final_template
 
         logger.info(f"Template file path: {template_file_path}")
         logger.info(f"Requirements file path: {requirements_file_path}")
         logger.info(f"Build file path: {build_file_destination_path}")
+
+        # Remove markdown code block indicators from the final template and requirements
+        final_template = final_template.replace('```python', '').replace('```', '')
+        requirements = requirements.replace('```', '').strip()  # Ensure to strip any leading/trailing whitespace
+
+        # Split requirements into a list
+        requirements_list = requirements.splitlines()
+
+        # Join the list into a string with each requirement on a new line
+        formatted_requirements = '\n'.join(requirements_list)
 
         logger.info("Template assembled successfully.")
     except Exception as e:
@@ -350,7 +368,7 @@ def assemble_config():
         'requirements_path': requirements_file_path,
         'build_file_path': build_file_destination_path,
         'final_template': final_template,
-        'requirements': requirements
+        'requirements': formatted_requirements  # Return the formatted string
     })
 
 @app.route('/download-agent', methods=['POST'])
@@ -467,13 +485,64 @@ def upload_config():
 
 
 
+# Initialize SocketIO
+socketio = SocketIO(app)
+
 @app.route('/test-agent', methods=['POST'])
-def test_agent():
-    return jsonify({'message': 'Agent tested successfully'})
+def test_agent_route():
+    logger.info("Received request to test agent.")
+
+    # Retrieve the requirements and code template from the session
+    requirements = session.get('requirements')
+    code_template = session.get('code_template')
+
+    # Log the retrieved session data
+    logger.debug(f"Session data - Requirements: {requirements}")
+    logger.debug(f"Session data - Code Template: {code_template}")
+
+    if not requirements or not code_template:
+        logger.error("Requirements or code template not found in session.")
+        return jsonify({'error': 'Requirements or code template not found.'}), 400
+
+    # Function to run the agent test
+    def run_test():
+        try:
+            logger.info("Starting agent test.")
+            success = test_agent(requirements, code_template)
+            if success:
+                message = 'Agent tested successfully'
+                logger.info(message)
+                socketio.emit('test_status', {'message': message})
+            else:
+                message = 'Agent testing failed'
+                logger.warning(message)
+                socketio.emit('test_status', {'message': message})
+        except Exception as e:
+            logger.error(f"Error during agent testing: {e}", exc_info=True)
+            socketio.emit('test_status', {'message': 'Error during agent testing'})
+
+    # Start the test in a new thread
+    test_thread = threading.Thread(target=run_test)
+    test_thread.start()
+
+    # Return immediately to keep the web server responsive
+    logger.info("Agent test started in background.")
+    return jsonify({'message': 'Agent test started in background.'})
+
+
+
+
 
 
 
 
 if __name__ == "__main__":
     port = int(os.getenv('PORT', 5000))  # Use the PORT environment variable if available, default to 5000
-    app.run(host='0.0.0.0', port=port, debug=True)
+    socketio.run(app, host='0.0.0.0', port=port, debug=True)
+
+
+
+
+
+
+

@@ -11,9 +11,4 @@ for chunk in agent_executor.stream(
     print(chunk)
     print("----")
 
-prompt = input("Enter a prompt: ")
-for chunk in agent_executor.stream(
-    {"messages": [HumanMessage(content=prompt)]}, config
-):
-    print(chunk)
-    print("----")
+
