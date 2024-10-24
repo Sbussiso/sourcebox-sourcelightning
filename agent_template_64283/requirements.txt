@@ -1,0 +1,7 @@
+```
+python-dotenv==1.0.0
+langchain-nvidia-ai-endpoints==1.0.0
+langchain-core==1.0.0
+langchain-community-tools==1.0.0
+langgraph==1.0.0
+```

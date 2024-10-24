@@ -97,6 +97,11 @@ document.addEventListener('DOMContentLoaded', function() {
     downloadButton.style.display = 'none';
     downloadButton.disabled = true;
 
+    // Initially hide and disable the test agent button
+    const testAgentButton = document.querySelector('#testAgentTemplate button');
+    testAgentButton.style.display = 'none';
+    testAgentButton.disabled = true;
+
     // Elements for spinner and waiting message
     const spinner = document.getElementById('spinner');
     const waitingMessage = document.getElementById('waitingMessage');
@@ -105,6 +110,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function enableDownloadButton() {
         downloadButton.style.display = 'block';
         downloadButton.disabled = false;
+
+        // Show the test agent button when the download button is enabled
+        testAgentButton.style.display = 'block';
+        testAgentButton.disabled = false;
     }
 
     // Function to hide spinner and waiting message
@@ -119,6 +128,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modelText !== 'Selected Model: None') {
             hideSpinnerAndMessage();
         }
+    }
+
+    // Function to enable all inputs and buttons except the "Upload Configuration" button
+    function enableAllInputsExceptUpload() {
+        const inputs = document.querySelectorAll('input, textarea, button');
+        inputs.forEach(input => {
+            if (input.id !== 'uploadConfigurationButton') {
+                input.disabled = false;
+            }
+        });
+        document.getElementById('uploadConfigurationButton').disabled = true;
     }
 
     // Handle configuration generation
@@ -248,6 +268,16 @@ project:
         .catch(error => console.error('Error:', error));
     });
 
+    // Handle test agent button click
+    testAgentButton.addEventListener('click', function() {
+        console.log("Testing agent...");
+
+        // Show the modal
+        const modalElement = document.querySelector('.modal');
+        const modal = new bootstrap.Modal(modalElement);
+        modal.show();
+    });
+
     // Handle download agent button click
     document.getElementById('downloadTemplate').addEventListener('click', function() {
         console.log("Downloading agent...");
@@ -340,6 +370,9 @@ project:
                 .then(data => {
                     console.log("Configuration processed successfully:", data);
                     alert(data.message);
+
+                    // Enable all inputs and buttons except the "Upload Configuration" button
+                    enableAllInputsExceptUpload();
 
                     // Reset values after configuration is processed successfully
                     document.getElementById('modelText').textContent = 'Selected Model: None';
