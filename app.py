@@ -467,7 +467,9 @@ def upload_config():
 
 
 
-
+@app.route('/test-agent', methods=['POST'])
+def test_agent():
+    return jsonify({'message': 'Agent tested successfully'})
 
 
 

@@ -276,6 +276,29 @@ project:
         const modalElement = document.querySelector('.modal');
         const modal = new bootstrap.Modal(modalElement);
         modal.show();
+
+        // Fetch the test agent response
+        fetch('/test-agent', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Test agent response:", data);
+
+            // Display the response message in the modal
+            const modalBody = modalElement.querySelector('.modal-body');
+            modalBody.textContent = data.message;
+        })
+        .catch(error => {
+            console.error('Error testing agent:', error);
+
+            // Display error message in the modal
+            const modalBody = modalElement.querySelector('.modal-body');
+            modalBody.textContent = 'Error testing agent. Please try again later.';
+        });
     });
 
     // Handle download agent button click
