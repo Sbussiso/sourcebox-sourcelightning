@@ -295,20 +295,47 @@ project:
         .then(data => {
             console.log("Test agent response received:", data);
 
-            const modalElement = document.querySelector('.modal');
             const modalBody = modalElement.querySelector('.modal-body');
             modalBody.textContent = data.message;
 
-            const modal = new bootstrap.Modal(modalElement);
+            // Show the modal again if needed
             modal.show();
         })
         .catch(error => {
             console.error('Error testing agent:', error);
 
-            const modalElement = document.querySelector('.modal');
             const modalBody = modalElement.querySelector('.modal-body');
             modalBody.textContent = 'Error testing agent. Please try again later.';
         });
+    });
+
+    // Function to manually remove the modal backdrop and reset body styles
+    function removeModalBackdrop() {
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+            backdrop.parentNode.removeChild(backdrop);
+        }
+        document.body.classList.remove('modal-open'); // Remove the class that prevents scrolling
+        document.body.style.overflow = ''; // Reset overflow style
+        document.body.style.paddingRight = ''; // Reset any padding added to the body
+    }
+
+    // Ensure the modal is closed properly
+    document.querySelectorAll('[data-bs-dismiss="modal"]').forEach(button => {
+        button.addEventListener('click', function() {
+            const modalElement = document.querySelector('.modal');
+            const modal = bootstrap.Modal.getInstance(modalElement);
+            if (modal) {
+                modal.hide();
+            }
+            removeModalBackdrop(); // Manually remove the backdrop and reset styles
+        });
+    });
+
+    // Listen for the modal hidden event to ensure cleanup
+    const modalElement = document.querySelector('.modal');
+    modalElement.addEventListener('hidden.bs.modal', function () {
+        removeModalBackdrop();
     });
 
     // Handle download agent button click
@@ -485,4 +512,24 @@ project:
     } else {
         console.error('Element with ID "submitConfigButton" not found.');
     }
+
+    
+    //reple agent template test status
+    const socket = io();
+
+    socket.on('test_status', function(data) {
+        console.log(data.message);
+        
+        // Assuming you have a modal with a class 'modal' and a body with class 'modal-body'
+        const modalElement = document.querySelector('.modal');
+        const modalBody = modalElement.querySelector('.modal-body');
+        
+        // Update the modal body with the message
+        modalBody.textContent = data.message;
+        
+        // Optionally, show the modal if it's not already visible
+        const modal = new bootstrap.Modal(modalElement);
+        modal.show();
+    });
+
 });
