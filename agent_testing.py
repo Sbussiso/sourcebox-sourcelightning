@@ -4,8 +4,14 @@ import traceback
 
 from langchain_core.tools import Tool
 from langchain_experimental.utilities import PythonREPL
+from openai import OpenAI
+from dotenv import load_dotenv
 
+load_dotenv()
+
+client = OpenAI()
 python_repl = PythonREPL()
+
 
 def test_agent(requirements, code_template):
     logs = []
@@ -13,7 +19,7 @@ def test_agent(requirements, code_template):
 
     # Install packages
     for package in requirements.splitlines():
-        if package.strip():
+        if package.strip() and package != "os":  # Ensure 'os' is not included
             try:
                 subprocess.check_call([sys.executable, "-m", "pip", "install", package])
                 logs.append(f"Successfully installed {package}")
@@ -30,9 +36,50 @@ def test_agent(requirements, code_template):
         logs.append(code)
         logs.append("Code executed successfully.")
         return True, logs
+
     except Exception as e:
+        solve_tries = 3
+
         logs.append("An error occurred during code execution:")
         logs.append(traceback.format_exc())
+
+        # Attempt to solve the error using GPT
+        for i in range(solve_tries):
+            try:
+                # Call GPT API with formatted history and vector results
+                response = client.chat.completions.create(
+                    model="gpt-4o",
+                    messages=[
+                        {"role": "system", "content": '''
+                        You are a template compiler and expert programmer.
+                        You are to take the template pieces you are given and re format them to create one final template.
+
+                        RULES:
+                        - no redundancy or errors.
+                        - write out the full entire script.
+                        - all imports go at the top.
+                        - tools go together
+                        '''},
+                        {"role": "user", "content": code_template}
+                    ]
+                )
+
+                response_content = response.choices[0].message.content
+                logs.append("Attempting to solve error automatically")
+                logs.append(response_content)
+
+                # Optionally, you can try to execute the corrected code here
+                code = python_repl.run(response_content)
+                logs.append("Corrected code output:")
+                logs.append(code)
+                logs.append("Corrected code executed successfully.")
+                return True, logs
+
+            except Exception as e:
+                logs.append(f"Error generating GPT response: {e}")
+                # If GPT fails, continue to the next attempt
+
+        # If all attempts fail, return the logs
         return False, logs
 
 if __name__ == "__main__":
