@@ -502,24 +502,41 @@ def test_agent_route():
 
     if not requirements or not code_template:
         logger.error("Requirements or code template not found in session.")
-        return jsonify({'error': 'Requirements or code template not found.'}), 400
+        return jsonify({'message': 'Requirements or code template not found.', 'logs': ''}), 400
 
-    # Function to run the agent test
+    logs = []
+
     def run_test():
+        nonlocal logs
         try:
             logger.info("Starting agent test.")
+            logs.append("Starting agent test.")
+            
+            # Log the inputs to the test_agent function
+            logger.debug(f"Running test_agent with requirements: {requirements} and code_template: {code_template}")
+            
             success = test_agent(requirements, code_template)
+            
+            # Log the result of the test_agent function
+            logger.debug(f"test_agent returned: {success}")
+            
             if success:
                 message = 'Agent tested successfully'
                 logger.info(message)
-                socketio.emit('test_status', {'message': message})
+                logs.append(message)
             else:
                 message = 'Agent testing failed'
                 logger.warning(message)
-                socketio.emit('test_status', {'message': message})
+                logs.append(message)
+            
+            # Emit the logs and message
+            socketio.emit('test_status', {'message': message, 'logs': '\n'.join(logs)})
         except Exception as e:
-            logger.error(f"Error during agent testing: {e}", exc_info=True)
-            socketio.emit('test_status', {'message': 'Error during agent testing'})
+            message = 'Error during agent testing'
+            error_message = f"{message}: {e}"
+            logger.error(error_message, exc_info=True)
+            logs.append(error_message)
+            socketio.emit('test_status', {'message': message, 'logs': '\n'.join(logs)})
 
     # Start the test in a new thread
     test_thread = threading.Thread(target=run_test)
@@ -527,7 +544,7 @@ def test_agent_route():
 
     # Return immediately to keep the web server responsive
     logger.info("Agent test started in background.")
-    return jsonify({'message': 'Agent test started in background.'})
+    return jsonify({'message': 'Agent test started in background.', 'logs': ''})
 
 
 
@@ -539,6 +556,8 @@ def test_agent_route():
 if __name__ == "__main__":
     port = int(os.getenv('PORT', 5000))  # Use the PORT environment variable if available, default to 5000
     socketio.run(app, host='0.0.0.0', port=port, debug=True)
+
+
 
 
 

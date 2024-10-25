@@ -295,8 +295,14 @@ project:
         .then(data => {
             console.log("Test agent response received:", data);
 
+            const modalTitle = modalElement.querySelector('.modal-title');
             const modalBody = modalElement.querySelector('.modal-body');
-            modalBody.textContent = data.message;
+
+            // Update the modal title with the status message
+            modalTitle.textContent = data.message;
+
+            // Update the modal body with the logs
+            modalBody.innerHTML = `<pre>${data.logs}</pre>`;
 
             // Show the modal again if needed
             modal.show();
@@ -304,7 +310,10 @@ project:
         .catch(error => {
             console.error('Error testing agent:', error);
 
+            const modalTitle = modalElement.querySelector('.modal-title');
             const modalBody = modalElement.querySelector('.modal-body');
+
+            modalTitle.textContent = 'Error';
             modalBody.textContent = 'Error testing agent. Please try again later.';
         });
     });
@@ -518,18 +527,42 @@ project:
     const socket = io();
 
     socket.on('test_status', function(data) {
-        console.log(data.message);
-        
+        console.log("Received test_status event from server.");
+        console.log("Data received:", data);
+
+        // Check if data contains the expected properties
+        if (data && data.message) {
+            console.log("Message from server:", data.message);
+        } else {
+            console.warn("Data does not contain a 'message' property.");
+        }
+
+        if (data && data.logs) {
+            console.log("Logs from server:", data.logs);
+        } else {
+            console.warn("Data does not contain a 'logs' property.");
+        }
+
         // Assuming you have a modal with a class 'modal' and a body with class 'modal-body'
         const modalElement = document.querySelector('.modal');
-        const modalBody = modalElement.querySelector('.modal-body');
-        
-        // Update the modal body with the message
-        modalBody.textContent = data.message;
-        
-        // Optionally, show the modal if it's not already visible
-        const modal = new bootstrap.Modal(modalElement);
-        modal.show();
+        if (modalElement) {
+            console.log("Modal element found.");
+            const modalBody = modalElement.querySelector('.modal-body');
+            
+            if (modalBody) {
+                console.log("Modal body element found. Updating content.");
+                // Update the modal body with the message and logs
+                modalBody.innerHTML = `<pre>${data.message}\n\n${data.logs}</pre>`;
+            } else {
+                console.error("Modal body element not found.");
+            }
+
+            // Optionally, show the modal if it's not already visible
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+        } else {
+            console.error("Modal element not found.");
+        }
     });
 
 });
