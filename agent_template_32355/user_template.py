@@ -1,6 +1,6 @@
-```python
-from dotenv import load_dotenv
+
 import os
+from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_community.tools import DuckDuckGoSearchRun
@@ -11,24 +11,27 @@ from langgraph.prebuilt import create_react_agent
 # Load environment variables
 load_dotenv()
 
-# Create the model and memory saver
-model = ChatOpenAI(model="gpt-4")
+# Create the memory saver
 memory = MemorySaver()
 
-# Define tools
+# Initialize the language model
+model = ChatOpenAI(model="gpt-4")
+
+# Define and create tools
+search = DuckDuckGoSearchRun()
+
 @tool
 def multiply(a: int, b: int) -> int:
     """Multiply two numbers."""
     return a * b
 
-# Let's inspect some of the attributes associated with the tool.
+# List of tools for the agent
+tools = [search, multiply]
+
+# Inspect the multiply tool
 print(multiply.name)
 print(multiply.description)
 print(multiply.args)
-
-# Assign tools
-search = DuckDuckGoSearchRun()
-tools = [search, multiply]
 
 # Create the agent executor
 agent_executor = create_react_agent(model, tools, checkpointer=memory)
@@ -40,4 +43,4 @@ for chunk in agent_executor.stream(
 ):
     print(chunk)
     print("----")
-```
+

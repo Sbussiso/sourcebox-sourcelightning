@@ -329,6 +329,10 @@ def assemble_config():
         logger.info("Generating requirements based on the final template.")
         requirements = generate_requirements(final_template, config_file_path)
 
+        # Remove markdown code block indicators from the final template and requirements
+        final_template = final_template.replace('```python', '').replace('```', '')
+        requirements = requirements.replace('```', '').strip()  # Ensure to strip any leading/trailing whitespace
+    
         logger.info("Exporting the final template and requirements to the current working directory.")
         output_dir, template_file_path, requirements_file_path, build_file_destination_path = export_final_template(final_template, config_file_path)
 
@@ -512,13 +516,8 @@ def test_agent_route():
             logger.info("Starting agent test.")
             logs.append("Starting agent test.")
             
-            # Log the inputs to the test_agent function
-            logger.debug(f"Running test_agent with requirements: {requirements} and code_template: {code_template}")
-            
-            success = test_agent(requirements, code_template)
-            
-            # Log the result of the test_agent function
-            logger.debug(f"test_agent returned: {success}")
+            success, test_logs = test_agent(requirements, code_template)
+            logs.extend(test_logs)
             
             if success:
                 message = 'Agent tested successfully'
@@ -529,7 +528,6 @@ def test_agent_route():
                 logger.warning(message)
                 logs.append(message)
             
-            # Emit the logs and message
             socketio.emit('test_status', {'message': message, 'logs': '\n'.join(logs)})
         except Exception as e:
             message = 'Error during agent testing'
@@ -556,6 +554,9 @@ def test_agent_route():
 if __name__ == "__main__":
     port = int(os.getenv('PORT', 5000))  # Use the PORT environment variable if available, default to 5000
     socketio.run(app, host='0.0.0.0', port=port, debug=True)
+
+
+
 
 
 

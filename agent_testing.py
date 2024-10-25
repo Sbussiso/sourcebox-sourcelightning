@@ -8,39 +8,32 @@ from langchain_experimental.utilities import PythonREPL
 python_repl = PythonREPL()
 
 def test_agent(requirements, code_template):
-    """Install packages using pip."""
-    # Remove standard library modules from the requirements list
-    standard_libs = {'os'}
-    requirements_list = [
-        req.strip() for req in requirements.splitlines() 
-        if req.strip() and req.strip() != '```' and req.strip() not in standard_libs
-    ]
-    print("Requirements to install:", requirements_list)  # Log the requirements list
+    logs = []
+    logs.append("Starting package installation...")
 
-    for package in requirements_list:
-        print(f"Attempting to install package: {package}")  # Debugging log
-        try:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-            print(f"Successfully installed {package}")
-        except subprocess.CalledProcessError as e:
-            print(f"Failed to install {package}. Error: {str(e)}")
-            return False  # Return False if any package installation fails
+    # Install packages
+    for package in requirements.splitlines():
+        if package.strip():
+            try:
+                subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+                logs.append(f"Successfully installed {package}")
+            except subprocess.CalledProcessError as e:
+                logs.append(f"Failed to install {package}. Error: {str(e)}")
+                return False, logs
 
-    """Run the generated code and check for errors."""
-    print("Starting code execution...")  # Debugging log
+    logs.append("Starting code execution...")
+
+    # Execute code
     try:
-        # Use exec to run the generated code
         code = python_repl.run(code_template)
-        print("Generated code output:")  # Debugging log
-        print(code)
-        print("Code executed successfully.")
-        return True  # Return True if code execution is successful
-
+        logs.append("Generated code output:")
+        logs.append(code)
+        logs.append("Code executed successfully.")
+        return True, logs
     except Exception as e:
-        # Capture and print any errors that occur during execution
-        print("An error occurred during code execution:")
-        traceback.print_exc()
-        return False  # Return False if code execution fails
+        logs.append("An error occurred during code execution:")
+        logs.append(traceback.format_exc())
+        return False, logs
 
 if __name__ == "__main__":
     print("Starting agent test...")  # Debugging log

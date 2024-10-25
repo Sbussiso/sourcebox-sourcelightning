@@ -1,4 +1,4 @@
-```python
+
 import os
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
@@ -8,37 +8,33 @@ from langchain_core.tools import tool
 from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
 
-# Load environment variables
 load_dotenv()
 
-# Create memory saver for agent
+# Initialize memory and model
 memory = MemorySaver()
-
-# Initialize the language model
 model = ChatOpenAI(model="gpt-4")
 
-# Initialize and assign tools
-search = DuckDuckGoSearchRun()
-
+# Define and inspect a custom tool
 @tool
 def multiply(a: int, b: int) -> int:
     """Multiply two numbers."""
     return a * b
 
-# Inspect attributes associated with the 'multiply' tool
-print(multiply.name)         # Output: multiply
-print(multiply.description)  # Output: Multiply two numbers.
-print(multiply.args)         # Output: {'a': int, 'b': int}
+print(multiply.name)
+print(multiply.description)
+print(multiply.args)
 
-# Assign the 'multiply' tool
+# Assign tools
+search = DuckDuckGoSearchRun()
 tools = [search, multiply]
 
-# Create agent executor with tools and memory
+# Create the agent
 agent_executor = create_react_agent(model, tools, checkpointer=memory)
 
 # Use the agent
 config = {"configurable": {"thread_id": "abc123"}}
-for chunk in agent_executor.stream({"messages": [HumanMessage(content="hi im bob! and i live in olympia washington")]}, config):
+for chunk in agent_executor.stream(
+    {"messages": [HumanMessage(content="hi im bob! and i live in olympia washington")]}, config
+):
     print(chunk)
     print("----")
-```
