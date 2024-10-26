@@ -1,0 +1,6 @@
+from langchain_mistralai import ChatMistralAI
+from langgraph.checkpoint.memory import MemorySaver
+
+# Create the agent
+memory = MemorySaver()
+model = ChatMistralAI(model="mistral-large-latest")

@@ -1,6 +1,0 @@
-python-dotenv
-os
-langchain-openai
-langchain-core
-langchain-community
-langgraph

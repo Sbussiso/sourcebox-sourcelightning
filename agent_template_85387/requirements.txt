@@ -1,7 +1,0 @@
-```
-python-dotenv
-langchain-openai
-langchain_community
-langchain_core
-langgraph
-```

@@ -66,121 +66,65 @@ def test_config():
 
 
 def gather_templates(config):
-
     # Read the configuration from the YAML file
     template_dict = {}
 
+    # Define paths for start and end templates
     start_template_path = os.path.join('lightning-plates', 'start template', 'start.txt')
+    end_template_path = os.path.join('lightning-plates', 'end template', 'end.txt')
 
-    # Attempt to read the content of the start.txt file
+    # Read start template
     try:
         with open(start_template_path, 'r') as file:
             start_template = file.read()
-        
     except FileNotFoundError:
         print(f"Error: The file '{start_template_path}' was not found.")
         return  # Exit the function if the file is not found
 
     template_dict["start"] = start_template
-    
-    # Check if the model is 'Anthropic'
-    if config['build']['model'] == 'Anthropic':
-        # Define the path for the anthropic.txt file
-        anthropic_file_path = os.path.join('lightning-plates', 'main template', 'models', 'anthropic.txt')
-        
-        # Read the content of the anthropic.txt file
-        with open(anthropic_file_path, 'r') as file:
-            anthropic_content = file.read()
 
-        model_template = anthropic_content
+    # Map models to their respective file paths
+    model_paths = {
+        'Anthropic': os.path.join('lightning-plates', 'main template', 'models', 'anthropic.txt'),
+        'OpenAI': os.path.join('lightning-plates', 'main template', 'models', 'openai.txt'),
+        'Mistral': os.path.join('lightning-plates', 'main template', 'models', 'mistral.txt'),
+        'Meta Llama': os.path.join('lightning-plates', 'main template', 'models', 'llama3.txt')
+    }
 
+    # Get model template
+    model = config['build']['model']
+    if model in model_paths:
+        with open(model_paths[model], 'r') as file:
+            model_template = file.read()
         template_dict["model template"] = model_template
-
-    elif config['build']['model'] == 'OpenAI':
-        openai_file_path = os.path.join('lightning-plates', 'main template', 'models', 'openai.txt')
-        with open(openai_file_path, 'r') as file:
-            openai_content = file.read()
-        model_template = openai_content
-        template_dict["model template"] = model_template
-    
-    elif config['build']['model'] == 'Meta Llama':
-        metallama_file_path = os.path.join('lightning-plates', 'main template', 'models', 'metallama.txt')
-        with open(metallama_file_path, 'r') as file:
-            metallama_content = file.read()
-        model_template = metallama_content
-        template_dict["model template"] = model_template
-    
     else:
         print('Error: no model found')
 
+    # Map tools to their respective file paths
+    tool_paths = {
+        'Duck Duck Go Search': os.path.join('lightning-plates', 'main template', 'tools', 'duckduckgo_search.txt'),
+        'Wikipedia Search': os.path.join('lightning-plates', 'main template', 'tools', 'wikipedia_search.txt'),
+        'Multiply': os.path.join('lightning-plates', 'main template', 'tools', 'multiply.txt'),
+        'Replit Code Interpreter': os.path.join('lightning-plates', 'main template', 'tools', 'replit-code-interpreter.txt'),
+        'Local Machine': os.path.join('lightning-plates', 'main template', 'tools', 'local-machine.txt'),
+        'Stack Exchange': os.path.join('lightning-plates', 'main template', 'tools', 'stackexchange.txt')
+    }
 
-    # check which tools are being used
+    # Get tool templates
     toolkits = config['build']['toolkits']
-
     tool_templates_list = []
 
     for tool in toolkits:
-        if tool == 'Duck Duck Go Search':
-            duckduckgo_search_path = os.path.join('lightning-plates', 'main template', 'tools', 'duckduckgo_search.txt')
-
-            # Read the content of the anthropic.txt file
-            with open(duckduckgo_search_path, 'r') as file:
-                duckduckgo_search_tool = file.read()
-            
-
-            tool_templates_list.append(duckduckgo_search_tool)
-
-        elif tool == 'Wikipedia Search':
-            wikipedia_search_path = os.path.join('lightning-plates', 'main template', 'tools', 'wikipedia_search.txt')
-
-            # Read the content of the anthropic.txt file
-            with open(wikipedia_search_path, 'r') as file:
-                wikipedia_search_tool = file.read()
-
-            tool_templates_list.append(wikipedia_search_tool)
-        
-        elif tool == 'Multiply':
-            multiply_path = os.path.join('lightning-plates', 'main template', 'tools', 'multiply.txt')
-
-            with open(multiply_path, 'r') as file:
-                multiply_tool = file.read()
-
-            tool_templates_list.append(multiply_tool)
-        
-        elif tool == 'Replit Code Interpreter':
-            replit_code_interpreter_path = os.path.join('lightning-plates', 'main template', 'tools', 'replit-code-interpreter.txt')
-
-            with open(replit_code_interpreter_path, 'r') as file:
-                replit_code_interpreter_tool = file.read()
-
-            tool_templates_list.append(replit_code_interpreter_tool)
-        
-        elif tool == 'Local Machine':
-            local_machine_path = os.path.join('lightning-plates', 'main template', 'tools', 'local-machine.txt')
-
-            with open(local_machine_path, 'r') as file:
-                local_machine_tool = file.read()
-
-            tool_templates_list.append(local_machine_tool)
-        
-        elif tool == 'Stack Exchange':
-            stack_exchange_path = os.path.join('lightning-plates', 'main template', 'tools', 'stackexchange.txt')
-
-            with open(stack_exchange_path, 'r') as file:
-                stack_exchange_tool = file.read()
-
-            tool_templates_list.append(stack_exchange_tool)
-
+        if tool in tool_paths:
+            with open(tool_paths[tool], 'r') as file:
+                tool_content = file.read()
+            tool_templates_list.append(tool_content)
         else:
             print('Error: no tools found')
-    
 
     template_dict["toolkits"] = tool_templates_list
 
-    #add end template
-    end_template_path = os.path.join('lightning-plates', 'end template', 'end.txt')
-
-    # Read the content of the anthropic.txt file
+    # Read end template
     with open(end_template_path, 'r') as file:
         end_template = file.read()
 

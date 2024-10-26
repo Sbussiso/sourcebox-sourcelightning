@@ -1,11 +1,11 @@
 build:
-  model: OpenAI
+  model: Meta Llama
   prompt: You are a helpful assistant that can answer questions and help with tasks.
   toolkits:
-  - Stack Exchange
-  - Replit Code Interpreter
+  - Multiply
   - Duck Duck Go Search
+  - Wikipedia Search
 project:
-  description: a test agent
-  name: test agent
+  description: a random test agent
+  name: agent
   version: 1.0.0
