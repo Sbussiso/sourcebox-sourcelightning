@@ -3,7 +3,6 @@ build:
   prompt: You are a helpful assistant that can answer questions and help with tasks.
   toolkits:
   - Wolfram Alpha
-  - Replit Code Interpreter
   - Tavily
 project:
   description: an agent using mistral and random tools

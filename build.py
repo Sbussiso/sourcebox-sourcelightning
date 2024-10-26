@@ -110,7 +110,8 @@ def gather_templates(config):
         'Stack Exchange': os.path.join('lightning-plates', 'main template', 'tools', 'stackexchange.txt'),
         'Wolfram Alpha': os.path.join('lightning-plates', 'main template', 'tools', 'wolfram_alpha.txt'),
         'Tavily': os.path.join('lightning-plates', 'main template', 'tools', 'tavily.txt'),
-        'Generate Image': os.path.join('lightning-plates', 'main template', 'tools', 'generate-image.txt')
+        'Generate Image': os.path.join('lightning-plates', 'main template', 'tools', 'generate-image.txt'),
+        'Google Trends': os.path.join('lightning-plates', 'main template', 'tools', 'google-trends.txt')
     }
 
     # Get tool templates
