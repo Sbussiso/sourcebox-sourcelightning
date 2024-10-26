@@ -1,0 +1,29 @@
+from langchain_core.tools import tool
+from openai import OpenAI
+client = OpenAI()
+
+
+@tool
+def generate_image(prompt: str) -> str:
+    """Generate an image"""
+    response = client.images.generate(
+      model="dall-e-3",
+      prompt=prompt,
+      size="1024x1024",
+      quality="standard",
+      n=1,
+    )
+
+    image_url = response.data[0].url
+    return image_url
+
+
+# Let's inspect some of the attributes associated with the tool.
+print(generate_image.name)
+print(generate_image.description)
+print(generate_image.args)
+
+
+
+# tool asignment
+tools = [generate_image]

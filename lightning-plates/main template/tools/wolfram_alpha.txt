@@ -1,3 +1,5 @@
+# pip install wolframalpha
+
 from langchain_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
 import nest_asyncio
 

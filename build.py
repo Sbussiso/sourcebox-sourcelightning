@@ -107,7 +107,10 @@ def gather_templates(config):
         'Multiply': os.path.join('lightning-plates', 'main template', 'tools', 'multiply.txt'),
         'Replit Code Interpreter': os.path.join('lightning-plates', 'main template', 'tools', 'replit-code-interpreter.txt'),
         'Local Machine': os.path.join('lightning-plates', 'main template', 'tools', 'local-machine.txt'),
-        'Stack Exchange': os.path.join('lightning-plates', 'main template', 'tools', 'stackexchange.txt')
+        'Stack Exchange': os.path.join('lightning-plates', 'main template', 'tools', 'stackexchange.txt'),
+        'Wolfram Alpha': os.path.join('lightning-plates', 'main template', 'tools', 'wolfram_alpha.txt'),
+        'Tavily': os.path.join('lightning-plates', 'main template', 'tools', 'tavily.txt'),
+        'Generate Image': os.path.join('lightning-plates', 'main template', 'tools', 'generate-image.txt')
     }
 
     # Get tool templates
