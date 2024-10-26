@@ -146,6 +146,30 @@ def gather_templates(config):
                 multiply_tool = file.read()
 
             tool_templates_list.append(multiply_tool)
+        
+        elif tool == 'Replit Code Interpreter':
+            replit_code_interpreter_path = os.path.join('lightning-plates', 'main template', 'tools', 'replit-code-interpreter.txt')
+
+            with open(replit_code_interpreter_path, 'r') as file:
+                replit_code_interpreter_tool = file.read()
+
+            tool_templates_list.append(replit_code_interpreter_tool)
+        
+        elif tool == 'Local Machine':
+            local_machine_path = os.path.join('lightning-plates', 'main template', 'tools', 'local-machine.txt')
+
+            with open(local_machine_path, 'r') as file:
+                local_machine_tool = file.read()
+
+            tool_templates_list.append(local_machine_tool)
+        
+        elif tool == 'Stack Exchange':
+            stack_exchange_path = os.path.join('lightning-plates', 'main template', 'tools', 'stackexchange.txt')
+
+            with open(stack_exchange_path, 'r') as file:
+                stack_exchange_tool = file.read()
+
+            tool_templates_list.append(stack_exchange_tool)
 
         else:
             print('Error: no tools found')

@@ -1,0 +1,11 @@
+build:
+  model: OpenAI
+  prompt: You are a helpful assistant with access to tools at your disposal
+  toolkits:
+  - Multiply
+  - Duck Duck Go Search
+  - Wikipedia Search
+project:
+  description: a test agent with all the tools
+  name: super test agent
+  version: 1.0.0
